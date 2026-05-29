@@ -31,11 +31,9 @@
 ## Auditoria preliminar (grande pausa — antes de portar)
 
 - [x] **Onda A · Segurança & RLS** → `docs/auditoria/` (rls-policies, edge-seguranca, auth-admin-secrets + consolidado `seguranca-rls.md` + `admin-model.md` com design decoy+real). 12 achados (S1–S12) priorizados.
+- [x] **Onda D · Design** → `docs/auditoria/design/` (6 lentes) + consolidado `design-diagnostico.md`. Convergência: corrigir regressão do `page.tsx`, preservar DNA, unificar sistema antes de portar, bottom-nav+a11y, disciplina de motion (D20 = momento Tompkins), voz de mestre 2ª pessoa.
 - [ ] Onda B · Interconexão (item 5) — mapa feature→componentes→tabelas→edge→externos + fluxos críticos.
 - [ ] Onda C · Index/CODEMAP (item 6) — expandir INDEX + gerar CODEMAP + mapa feature→dados.
-- [x] **Onda D · Design** → `docs/auditoria/design/` (6 lentes) + consolidado `design-diagnostico.md`. Convergência: corrigir regressão do `page.tsx`, preservar DNA, unificar sistema antes de portar, bottom-nav+a11y, disciplina de motion (D20 = momento Tompkins), voz de mestre 2ª pessoa.
-- [ ] Onda B · Interconexão (item 5).
-- [ ] Onda C · Index/CODEMAP (item 6).
 
 ### Decisões abertas da Onda D (aguardam Marco)
 
