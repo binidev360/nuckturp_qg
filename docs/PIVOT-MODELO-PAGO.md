@@ -58,7 +58,8 @@
 - 📝 **PRD precisa de revisão** (§3 modelo, §4.8 Academia, §6 métricas Free→Premium, monetização).
 - ⬇️ **Módulo Academy** (alta complexidade, ~20 componentes) **sai do escopo de port** → reduz trabalho da Fase 4.5.
 - 🔗 **Rotas `/journey/*`:** decidir destino — redirect/410 (tensão com o guardrail "preservar slugs", mas Academia era horizonte e tem pouco SEO). Ver C6.
-- 💳 **Billing (edge function):** passa a **gatear o app inteiro** (paywall no nível do app), não só features premium.
+- 💳 **Billing (edge function):** passa a **gatear o app inteiro** (paywall no nível do app), não só features premium. ⚠️ **Achado da Onda B:** o billing antigo **não tem webhook Stripe** — o entitlement é resolvido por **polling de 5min** (`useSubscription`). Para o paywall global confiável, **construir webhook Stripe → tabela `entitlements`** (em vez de manter o check on-demand). É o principal "novo a construir" do paywall.
+- 🧹 **Remoção da Academia — cuidado (achado da Onda C):** alguns hooks são **compartilhados** com Blog/Admin/Notas (`useReadingProgress`, `useRetentionReminders`, `useNPSAdminData`, `paragraphIndexer`). Ao remover a Academia, **não deletar cego** — grep de uso antes; manter os compartilhados.
 - 🆕 **Novo a construir:** entitlement cross-product (WorldCraft), sistema de cupom (MesaQuest), metering de IA + add-on, badge de header WorldCraft.
 - 🗝️ **`premium_overrides`/VIP:** vira mecanismo central (não mais exceção).
 
