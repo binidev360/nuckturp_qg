@@ -12,8 +12,9 @@ Esta pasta guarda segredos usados localmente na migração. **Tudo aqui é gitig
   SUPABASE_PROJECT_REF="<ref>"
   SUPABASE_ACCESS_TOKEN="sbp_..."   # opcional (listar secrets)
   ```
+- **`dev.env`** — credenciais do Supabase próprio do QG (ref `fciqovzbtasbkxupxidb`, este vira produção). **Modelo em `dev.env.example`** — copiar e preencher. Vars: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`, `SUPABASE_SECRET_KEY`, `SUPABASE_DB_URL` (Direct 5432), `SUPABASE_POOLER_URL` (6543), `SUPABASE_ACCESS_TOKEN` (depois).
 - **`destino.env`** — credenciais do Supabase de DESTINO descartável (teste do spike).
-- **`auth-data.sql`** / dumps — saídas de `pg_dump` do schema `auth`. **Contêm hashes de senha — jamais commitar.**
+- **`auth-data.sql`** / dumps — saídas de `pg_dump` do schema `auth`. **Contêm hashes de senha, jamais commitar.**
 
 ## Regras
 
