@@ -28,7 +28,7 @@ Caminho base: `D:\ProjetoAntigravity\Nuckturp_2.1\nuckturp`
 4. **Executar a Fase 00 (spikes de viabilidade)** — NÃO pular. Esses 4 spikes podem abortar/replanejar:
    - **00.1** Auth/senha: `pg_dump` do schema `auth` do Lovable; provar leitura de `encrypted_password` + `auth.identities` e que é bcrypt GoTrue; testar login email + Google + identidade dupla. **NO-GO aborta.**
    - **00.2** Credenciais: connection string `Direct` + `service_role` sem transfer? Se exigir transfer ⇒ **pausa e decisão do Marco**.
-   - **00.3** Runtime Hostinger: deploy "hello SSR + 1 página ISR" no plano B; medir processo persistente, RAM, cold start, cache ISR. **NO-GO ⇒ VPS agora.**
+   - **00.3** ~~Runtime Hostinger~~ → **RESOLVIDO (D3 + ADR-0003: VPS "A")**. Não é mais gate de viabilidade. Resta só o **checklist de spec da VPS**: RAM dedicada ≥ 2 GB, vCPU ≥ 2, Ubuntu LTS, Node 22, SSH + firewall + PM2/systemd, SSL (Hostinger ou Let's Encrypt).
    - **00.4** Ensaio de cutover cronometrado com volume real + rollback de verdade.
    - **00.5** GO/NO-GO documentado (POC validado vs aposta).
 5. Só com **GO** → começar a **Fase 0.1** (scaffold Next.js).

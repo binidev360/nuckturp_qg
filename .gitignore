@@ -18,6 +18,11 @@ next-env.d.ts
 .env*.local
 .env.local
 
+# segredos locais e dumps de migração (NUNCA commitar; auth contém hashes)
+.secrets/*
+!.secrets/README.md
+/export/
+
 # logs
 *.log
 npm-debug.log*
