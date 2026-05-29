@@ -1,6 +1,6 @@
 # Inventário de Rotas e Slugs — Contrato de URLs (Nuckturp QG)
 
-> **Propósito:** este documento é o **CONTRATO DE URLs** que a reescrita Next.js 15 deve preservar **verbatim**. Cada path abaixo já circula em produção (`nuckturp.com.br`), está indexado pelo Google e/ou foi compartilhado por usuários. Mudança de path é **proibida** (guardrail de SEO).
+> **Propósito:** este documento é o **CONTRATO DE URLs** que a reescrita Next.js 16 deve preservar **verbatim**. Cada path abaixo já circula em produção (`nuckturp.com.br`), está indexado pelo Google e/ou foi compartilhado por usuários. Mudança de path é **proibida** (guardrail de SEO).
 >
 > **Fontes (read-only):**
 > - Tabela de rotas: `D:\ProjetoAntigravity\Nuckturp_2.1\nuckturp\src\App.tsx` (linhas 141–208) — React Router v6 (`react-router-dom`, `<BrowserRouter>`).

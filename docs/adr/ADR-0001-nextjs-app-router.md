@@ -8,7 +8,7 @@
 O app atual é uma SPA Vite/React com React Router. SEO é driver principal (tráfego de conteúdo D&D 5e), mas SPA não entrega SSR/SSG. Há lock-in no Lovable que queremos eliminar.
 
 ## Decisão
-Reescrita idiomática completa em **Next.js 15 (App Router)**: Server Components por padrão, Server Actions para mutações, ISR (`generateStaticParams` + `revalidate`) para conteúdo, `generateMetadata` para SEO, route handlers para webhooks/sitemap/RSS/OG.
+Reescrita idiomática completa em **Next.js 16 (App Router)**: Server Components por padrão, Server Actions para mutações, ISR (`generateStaticParams` + `revalidate`) para conteúdo, `generateMetadata` para SEO, route handlers para webhooks/sitemap/RSS/OG.
 
 ## Alternativas consideradas
 - **Lift-and-shift** (embrulhar a SPA no Next) — rejeitado: não entrega o SEO idiomático nem a base limpa desejada.

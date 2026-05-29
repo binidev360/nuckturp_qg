@@ -44,7 +44,7 @@ A cópia (não "transfer ownership") traz tudo para um Supabase novo na conta do
 
 | Camada | Decisão |
 |---|---|
-| Framework | **Next.js 15 (App Router)**, TypeScript strict, `output: 'standalone'` (viabiliza Hostinger Node) |
+| Framework | **Next.js 16 (App Router)**, TypeScript strict, `output: 'standalone'` (viabiliza Hostinger Node) |
 | UI | Tailwind 3 + shadcn/ui (re-init p/ Next) + framer-motion; tokens HSL light+dark portados verbatim |
 | Fontes | `next/font` — Space Grotesk (display) + Inter (sans) |
 | Auth | **`@supabase/ssr`** — browser client, server client (`cookies()`), middleware com `getClaims()`; login/signup via **server actions** |
@@ -67,7 +67,7 @@ Cada sub-fase tem **critério de saída**. Nada avança sem o anterior pronto e 
 - **00.5 — Decisão GO/NO-GO documentada:** consolidar resultados dos 4 spikes; reclassificar no Decision Log o que é **POC validado** vs **aposta**. Só com GO segue para a Fase 0.
 
 ### Fase 0 — Fundação & arquitetura (local, sem tocar produção)
-- **0.1 Scaffold:** Next.js 15 (App Router, TS strict, `output: 'standalone'`), estrutura feature-first, ESLint/Prettier.
+- **0.1 Scaffold:** Next.js 16 (App Router, TS strict, `output: 'standalone'`), estrutura feature-first, ESLint/Prettier.
 - **0.2 Design system portado:** tokens HSL (light+dark), `next/font` (Space Grotesk + Inter), `tailwind.config`, `globals.css`, shadcn re-init.
 - **0.3 Camada Supabase:** `@supabase/ssr` (browser/server/middleware com `getClaims`) + util service-role; envs `NEXT_PUBLIC_*`.
 - **0.4 Qualidade & convenções:** branch strategy, commit template, pre-commit hooks (inclui regra `no-alert`), tsconfig strict, Vitest/Playwright base.

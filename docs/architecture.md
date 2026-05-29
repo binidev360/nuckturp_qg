@@ -29,7 +29,7 @@
 
 | Camada | Tecnologia | Responsabilidade |
 |---|---|---|
-| Apresentação | Next.js 15 App Router, React 18, Tailwind, shadcn/ui, framer-motion | UI, SSR/SSG/ISR, motion |
+| Apresentação | Next.js 16 App Router, React 18, Tailwind, shadcn/ui, framer-motion | UI, SSR/SSG/ISR, motion |
 | Sessão/Auth | `@supabase/ssr` (cookies) + middleware `getClaims()` | Sessão em RSC, Server Actions, Route Handlers e middleware |
 | Dados (server) | Supabase server client / service-role util | Leitura RSC, mutações via Server Actions |
 | Dados (client) | TanStack Query (onde há interação intensa) | Cache client-side, optimistic updates |

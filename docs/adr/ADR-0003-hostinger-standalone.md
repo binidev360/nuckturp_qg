@@ -5,7 +5,7 @@
 - **Status:** Aceito · **Data:** 2026-05-22 (revisado no mesmo dia após review)
 
 ## Contexto
-O dono tem plano Node "B" da Hostinger e pode assinar VPS "A". Next.js 15 SSR precisa de runtime Node persistente. O multi-agent review (Constraint Guardian) levantou riscos 🔴 de hosting compartilhado: processo Node morto por idle/OOM, ISR cache em disco efêmero, limites de RAM/processo (LVE), Passenger reciclando. Custo não é prioridade declarada; "prisão" sim.
+O dono tem plano Node "B" da Hostinger e pode assinar VPS "A". Next.js 16 SSR precisa de runtime Node persistente. O multi-agent review (Constraint Guardian) levantou riscos 🔴 de hosting compartilhado: processo Node morto por idle/OOM, ISR cache em disco efêmero, limites de RAM/processo (LVE), Passenger reciclando. Custo não é prioridade declarada; "prisão" sim.
 
 ## Decisão
 Hospedar em **VPS "A" da Hostinger** com `output: 'standalone'`. Spec mínima: ≥ 2 GB RAM, ≥ 2 vCPU, Ubuntu LTS, Node 22, PM2/systemd, SSL. Custo um pouco maior em troca de runtime confiável e fim da incerteza pré-código.

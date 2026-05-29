@@ -12,7 +12,15 @@
 - [x] Frente opcional — Substitutos do lock-in mapeados em `docs/migracao-lock-in.md` (IA→Gemini REST, e-mail→Resend).
 - [ ] (bloqueado) Fase 00.1 auth spike → aguarda acesso ao Lovable.
 
-> **Preparação sem Supabase ESGOTADA.** Tudo o que restava agora depende do acesso ao Lovable/Supabase (spikes 00.1/00.4) ou do GO da Fase 00 (scaffold/Fase 1).
+## Front — Fase 0 (gate da Fase 00 furado conscientemente pelo Marco)
+> Decisão do Marco (2026-05-28): começar a fundação antes do GO da Fase 00, limitada ao que NÃO depende de auth (parar antes da Fase 2). Risco assumido: retrabalho se o spike 00.1 abortar.
+- [x] Prep front: inventário de UI (`docs/inventario/ui-componentes.md`) + extração designlang (`docs/inventario/designlang/`).
+- [x] **0.1 Scaffold Next 16** (App Router, TS strict, `output: 'standalone'`, Turbopack, Tailwind v4, alias `@/*`). `npm run build` verde.
+- [ ] 0.2 Design aplicado: tokens HSL (do código real, corrigindo as 6 divergências), fontes Space Grotesk + Inter (`next/font`), globals/Tailwind. Decidir Tailwind v3 vs v4 e o caso `FloatingDice`.
+- [ ] 0.5 App shell: layout dark, providers, placeholder com a identidade.
+- [ ] PARAR antes da Fase 2 (auth) — refém do spike 00.1.
+
+> Restante bloqueado: spikes 00.1/00.4 e Fase 1 dependem do acesso ao Lovable/Supabase.
 
 ## Decisões travadas (2026-05-28)
 - Hospedagem = **VPS "A"** (D3/ADR-0003). START-HERE.md corrigido; PRD/ops/architecture do projeto antigo seguem desatualizados (read-only, corrigir ao portar docs).

@@ -1,6 +1,6 @@
 # Inventário de módulos — QG do Mestre (app antigo Vite/React)
 
-> Fonte: `D:\ProjetoAntigravity\Nuckturp_2.1\nuckturp` (READ-ONLY). Mapeamento para definir escopo de paridade por módulo na migração para Next.js 15 App Router.
+> Fonte: `D:\ProjetoAntigravity\Nuckturp_2.1\nuckturp` (READ-ONLY). Mapeamento para definir escopo de paridade por módulo na migração para Next.js 16 App Router.
 > Data do levantamento: 2026-05-28. Todos os caminhos abaixo são relativos a `src/` do app antigo salvo indicação contrária.
 
 ## Stack do app antigo (referência)
