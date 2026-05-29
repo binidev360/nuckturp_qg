@@ -90,7 +90,7 @@ Modelo freemium morre · R$29 · home = página de vendas · Academia removida d
 ## Fases (macro — detalhe no plano-mestre)
 
 - [ ] Fase 0 — Fundação & arquitetura (scaffold, design system, camada Supabase, qualidade, app shell). Local.
-- [~] Fase 1 — Schema-first: ✅ schema aplicado (209 migrations, 85 tabelas, 0 sem RLS) + types + camada `@supabase/ssr` (0.3). ⏳ pendente: 1.4 deploy das edge functions (secrets + lock-in) e 1.5 seed sintético. Ver `docs/fase1-migracao-notas.md`.
+- [~] Fase 1 — Schema-first: ✅ schema (209 migrations, 85 tabelas, 0 sem RLS) + types + `@supabase/ssr` (0.3) + **grants das roles corrigidos** (migration de grants) + **478 posts públicos espelhados** do Lovable (dev, sem PII, via `scripts/mirror-posts.mjs`). ⏳ pendente: 1.4 deploy das edge functions (secrets + lock-in); 1.5 seed de dados privados sintéticos. Ver `docs/fase1-migracao-notas.md`.
 - [ ] Fase 2 — Núcleo: Auth + shell + design. Inclui **2.2 dry-run de senha/identities** (risco nº 1).
 - [ ] Fase 3 — Páginas públicas SSR/SSG (SEO): blog, perfil, dicionário, landing, metadata/sitemap/RSS/OG + diff de HTML.
 - [ ] Fase 4 — App autenticado por módulo (campanhas, diário/TipTap, whiteboard, jogadores, ferramentas, admin). Gate de corte D17 pós-4.2.

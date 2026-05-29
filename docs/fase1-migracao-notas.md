@@ -24,8 +24,16 @@
 - Migrations/`db push`/`gen types` → **session pooler 5432** (`SUPABASE_DB_URL`). Direct (IPv6) não resolve em IPv4 nesta máquina.
 - `gen types` rodou via `--project-id` + access token (Management API), não via `--db-url`.
 
+## Grants das roles de API (correção sistêmica)
+
+Após o push, as 85 tabelas estavam **sem DML** (SELECT/INSERT/UPDATE/DELETE) para `anon`/`authenticated`/`service_role` — os auto-grants do Supabase não dispararam no push via pooler como `postgres`. Sem isso o app não funcionaria (anon não lê, service_role não escreve). Corrigido pela migration **`20260529000000_grants_api_roles.sql`** (grants padrão Supabase; RLS segue como camada de segurança). Postura grant+RLS a revisar na Fase 6.3.
+
+## Espelho de conteúdo público (dev)
+
+`scripts/mirror-posts.mjs` puxou **478 posts publicados** do Lovable via **anon** (REST) e inseriu no projeto novo via **secret key**. Sem PII. FKs `category_id`/`blog_author_id` anuladas; `author_id` mantido (sem FK no schema). Triggers de USER de `posts` **desabilitados durante o insert** (para não disparar ping-search-engines/notificações 478×) e reabilitados depois. Anon lê os 478 no projeto novo (RLS published) — dá realismo às páginas de SEO (Fase 3).
+
 ## Pendente na Fase 1
 
-- 0.3: camada `@supabase/ssr` (`lib/supabase/{client,server,middleware,admin}`) + `.env.local`.
+- ✅ 0.3 camada `@supabase/ssr` + `.env.local` (feito).
 - 1.4: deploy das 26 Edge Functions (precisa repor secrets) + saída do lock-in.
-- 1.5: seed sintético.
+- 1.5: seed de dados PRIVADOS sintéticos (campanhas/jogadores fake) p/ testar o app autenticado — o espelho cobriu só o conteúdo público.
