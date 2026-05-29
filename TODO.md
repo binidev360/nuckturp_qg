@@ -9,9 +9,10 @@
 - [x] Frente 3 — Suíte de docs portada para `docs/` (VPS "A" + npm) + planos dos spikes 00.1 e 00.4.
 - [x] Frente 2 (scripts) — Migração portada/corrigida em `scripts/` (export/import com schema `auth`).
 - [x] Frente 2 (ferramentas) — pg_dump/psql 18.4, jq, supabase CLI instalados via scoop.
+- [x] Frente opcional — Substitutos do lock-in mapeados em `docs/migracao-lock-in.md` (IA→Gemini REST, e-mail→Resend).
 - [ ] (bloqueado) Fase 00.1 auth spike → aguarda acesso ao Lovable.
 
-> **Preparação sem Supabase ESGOTADA.** Tudo o que restava depende do acesso ao Lovable/Supabase (spikes 00.1/00.4) ou do GO da Fase 00 (scaffold/Fase 1). Frente opcional ainda possível sem acesso: mapear os substitutos do lock-in (Gemini direto + Resend) nas 7 edge functions.
+> **Preparação sem Supabase ESGOTADA.** Tudo o que restava agora depende do acesso ao Lovable/Supabase (spikes 00.1/00.4) ou do GO da Fase 00 (scaffold/Fase 1).
 
 ## Decisões travadas (2026-05-28)
 - Hospedagem = **VPS "A"** (D3/ADR-0003). START-HERE.md corrigido; PRD/ops/architecture do projeto antigo seguem desatualizados (read-only, corrigir ao portar docs).
