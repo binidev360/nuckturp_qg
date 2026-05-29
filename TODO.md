@@ -33,7 +33,13 @@
 - [x] **Onda A · Segurança & RLS** → `docs/auditoria/` (rls-policies, edge-seguranca, auth-admin-secrets + consolidado `seguranca-rls.md` + `admin-model.md` com design decoy+real). 12 achados (S1–S12) priorizados.
 - [ ] Onda B · Interconexão (item 5) — mapa feature→componentes→tabelas→edge→externos + fluxos críticos.
 - [ ] Onda C · Index/CODEMAP (item 6) — expandir INDEX + gerar CODEMAP + mapa feature→dados.
-- [ ] Onda D · Design (item 4) — 6 skills (taste/impeccable/ui-ux-pro-max/design-motion-principles/motion-audit/humanizer) → consolidado. Escopo: site no ar + código antigo → spec da nova versão.
+- [x] **Onda D · Design** → `docs/auditoria/design/` (6 lentes) + consolidado `design-diagnostico.md`. Convergência: corrigir regressão do `page.tsx`, preservar DNA, unificar sistema antes de portar, bottom-nav+a11y, disciplina de motion (D20 = momento Tompkins), voz de mestre 2ª pessoa.
+- [ ] Onda B · Interconexão (item 5).
+- [ ] Onda C · Index/CODEMAP (item 6).
+
+### Decisões abertas da Onda D (aguardam Marco)
+
+- E1: easing canônico — `[0.4,0,0.2,1]` (fiel ao live) vs `[0.22,1,0.36,1]` (premium). E2: fonte de corpo (Inter vs Geist+mono). E3: D20 animado — Fase 5 ou spike. E4: jornadas do bottom-nav. E5: aplicar os P0 (page.tsx + reduced-motion) já?
 
 ### Decisões abertas da Onda A (aguardam Marco)
 
