@@ -1,6 +1,6 @@
 # TODO — Nuckturp QG
 
-> Reescrita do QG do Mestre (Nuckturp) de Vite/React (Lovable) → Next.js 15 + Supabase próprio.
+> Reescrita do QG do Mestre (Nuckturp) de Vite/React (Lovable) → Next.js 16 + Supabase próprio.
 > Fonte de verdade do plano: `D:\ProjetoAntigravity\Nuckturp_2.1\nuckturp\docs\MIGRACAO-NEXTJS.md` (APPROVED).
 > Slow and steady — 8 fases × 5 sub-fases + Fase 00 (spikes GO/NO-GO). Nada avança sem o anterior validado.
 
@@ -19,7 +19,7 @@
 
 - [x] Prep front: inventário de UI (`docs/inventario/ui-componentes.md`) + extração designlang (`docs/inventario/designlang/`).
 - [x] **0.1 Scaffold Next 16** (App Router, TS strict, `output: 'standalone'`, Turbopack, Tailwind v4, alias `@/*`). `npm run build` verde.
-- [x] 0.2 Design aplicado: tokens HSL dark-first (valores reais do app), Space Grotesk + Inter via `next/font`, Tailwind v4, gradiente nuckturp + `<strong>`/`<em>` de marca. Build verde + screenshot conferido. (Pendente: refletir as 6 divergências em `design-system.md`/`branding.md`; `FloatingDice` → Fase 5.)
+- [x] 0.2 Design aplicado: tokens HSL dark-first (valores reais do app), Space Grotesk + Inter via `next/font`, Tailwind v4, gradiente nuckturp + `<strong>`/`<em>` de marca. Build verde + screenshot conferido. (Divergências refletidas como erratas nos docs; `FloatingDice` → Fase 5.)
 - [x] 0.5 App shell: layout pt-BR dark + metadata Nuckturp + placeholder com a identidade (badge, gradiente, chips).
 - [x] 0.4 Qualidade: ESLint `no-alert`, Prettier, husky+lint-staged (pre-commit validado), Vitest (3 testes), Playwright base (channel chrome). lint/typecheck/test verdes.
 - [x] Docs: erratas em design-system.md/branding.md (apontam ui-componentes.md) + assets de marca copiados p/ `public/`.
