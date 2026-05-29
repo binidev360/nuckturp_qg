@@ -11,7 +11,7 @@ Modelo freemium morre · R$29 · home = página de vendas · Academia removida d
 ### Tarefas geradas pelo pivot (a executar nas fases certas)
 
 - [ ] Revisar o PRD (modelo, Academia, monetização, métricas) refletindo o pivot.
-- [ ] Página de vendas como home (Fase 3) — usar `/copy-basic`.
+- [x] **Página de vendas (home)** construída → `app/page.tsx` (copy via `/copy-basic` em `docs/copy-pagina-vendas.md`; design Onda D; trial 21d sem cartão; 134+; depoimento placeholder; badge WorldCraft). Botão canônico `components/ui/button.tsx` + `cn` em lib/utils. Build verde + screenshot conferido. CTAs apontam p/ `/signup` (rota futura, Fase 2).
 - [ ] Paywall no nível do app (billing gateia tudo) + tiers (pago/VIP/WorldCraft/MesaQuest).
 - [ ] Entitlement cross-product WorldCraft (cruzar Stripe/DB) + badge header 🔓 "assinante worldcraft".
 - [ ] Cupom MesaQuest (Stripe coupons).

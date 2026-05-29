@@ -47,4 +47,4 @@ Thumbs.db
 
 # artefatos transientes de captura (Playwright/preview)
 .playwright-mcp/
-/spike-fontes-preview.jpeg
+/*-preview.jpeg
