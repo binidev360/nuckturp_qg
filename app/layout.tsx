@@ -1,16 +1,22 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Inter } from "next/font/google";
+import { Space_Grotesk, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-// Tipografia da marca (self-host via next/font): Space Grotesk (display) + Inter (corpo).
+// Tipografia da marca (self-host via next/font): Space Grotesk (display) + Geist (corpo) + Geist Mono (números).
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
   subsets: ["latin"],
   display: "swap",
 });
 
-const inter = Inter({
-  variable: "--font-inter",
+const geist = Geist({
+  variable: "--font-geist",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
   subsets: ["latin"],
   display: "swap",
 });
@@ -22,28 +28,25 @@ export const metadata: Metadata = {
     template: "%s · QG do Mestre",
   },
   description:
-    "O hub do mestre de RPG: organize campanhas, documente sessões, crie mundos e evolua como narrador. Plataforma Nuckturp.",
+    "O QG do mestre de RPG: suas campanhas, sessões, notas e mundo num lugar só, em vez de espalhados por planilhas e apps soltos.",
   applicationName: "QG do Mestre",
   openGraph: {
     type: "website",
     locale: "pt_BR",
     siteName: "QG do Mestre — Nuckturp",
     title: "QG do Mestre — Nuckturp",
-    description:
-      "O hub do mestre de RPG: campanhas, sessões, diário e mundos, num só lugar.",
+    description: "O QG do mestre de RPG: campanhas, sessões, diário e mundo num lugar só.",
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
       lang="pt-BR"
-      className={`dark ${spaceGrotesk.variable} ${inter.variable}`}
+      className={`dark ${spaceGrotesk.variable} ${geist.variable} ${geistMono.variable}`}
       suppressHydrationWarning
     >
-      <body className="min-h-dvh bg-background font-sans text-foreground antialiased">
+      <body className="bg-background text-foreground min-h-dvh font-sans antialiased">
         {children}
       </body>
     </html>

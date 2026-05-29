@@ -66,7 +66,7 @@ Modelo freemium morre · R$29 · home = página de vendas · Academia removida d
 
 ### Tarefas geradas pelas decisões (a executar)
 
-- [x] **Spike de fonte** (E2) → `docs/auditoria/spike-fontes.{html,md}`. Recomendação: **Geist (corpo) + Geist Mono (números)**, Space Grotesk no display; Inter como fallback. **Aguarda escolha do Marco** para aplicar em layout.tsx/globals.css.
+- [x] **Spike de fonte** (E2) → escolhido e **aplicado**: **Geist (corpo) + Geist Mono (números)** em layout.tsx/globals.css; Space Grotesk no display. Build verde. Spike em `docs/auditoria/spike-fontes.{html,md}`. Também corrigida a metadata description (removido "hub", humanizer 4.2).
 - [ ] **Revisar PRD** → feito (subagent, refletindo o pivot: §3 reescrita, Academia removida, métricas trial→pago, Stripe gateia app). ⚠️ Em-dashes pré-existentes no PRD a limpar quando "donos" do doc.
 - [ ] Versionar `consent_links` + RPCs de consentimento com RLS (Fase 1, antes do port) — inventariar `manual-scripts/` primeiro.
 - [ ] Spec do D20 animado para a Fase 5 (capturar agora).
