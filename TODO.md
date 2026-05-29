@@ -6,8 +6,8 @@
 
 ## Em andamento (preparação — Supabase pendente)
 - [x] Frente 1 — Inventários do app antigo → `docs/inventario/` (schema, edge-functions, rotas-slugs, modulos).
-- [ ] Frente 3 — Portar/atualizar a suíte de docs no QG (VPS "A" + npm) + plano do spike 00.4.
-- [ ] (bloqueado) Fase 00.1 auth spike → aguarda acesso ao Lovable.
+- [x] Frente 3 — Suíte de docs portada para `docs/` (VPS "A" + npm) + planos dos spikes 00.1 e 00.4.
+- [ ] (bloqueado) Fase 00.1 auth spike → aguarda acesso ao Lovable + instalar pg_dump/psql/jq/supabase CLI.
 
 ## Decisões travadas (2026-05-28)
 - Hospedagem = **VPS "A"** (D3/ADR-0003). START-HERE.md corrigido; PRD/ops/architecture do projeto antigo seguem desatualizados (read-only, corrigir ao portar docs).
