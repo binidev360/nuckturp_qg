@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Spike de fonte — QG do Mestre (Inter × Geist + mono)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&family=Inter:wght@300..700&family=JetBrains+Mono:wght@400..600&family=Space+Grotesk:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --void: #1a1a1a;
+        --fg: hsl(80 100% 95%);
+        --muted: hsl(0 0% 55%);
+        --card: hsl(0 0% 12%);
+        --border: hsl(0 0% 22%);
+        --lime: #c4ff4d; /* dark primary */
+        --violet: #ba8cff; /* dark secondary */
+        --display: "Space Grotesk", system-ui, sans-serif;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--void);
+        color: var(--fg);
+        font-family: "Inter", system-ui, sans-serif;
+        padding: 40px clamp(16px, 4vw, 64px);
+        line-height: 1.6;
+      }
+      .page-title {
+        font-family: var(--display);
+        font-weight: 700;
+        font-size: clamp(28px, 4vw, 44px);
+        letter-spacing: -0.02em;
+        margin: 0 0 4px;
+      }
+      .page-sub { color: var(--muted); margin: 0 0 36px; max-width: 60ch; }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+        gap: 24px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 28px;
+      }
+      .tag {
+        display: inline-block;
+        font-family: "Geist Mono", monospace;
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--lime);
+        border: 1px solid hsl(82 100% 65% / 0.3);
+        background: hsl(82 100% 65% / 0.08);
+        border-radius: 999px;
+        padding: 4px 10px;
+        margin-bottom: 18px;
+      }
+      h2.demo {
+        font-family: var(--display);
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 0.95;
+        letter-spacing: -0.02em;
+        margin: 0 0 14px;
+      }
+      .lime { color: var(--lime); }
+      strong { color: var(--lime); font-weight: 650; }
+      em { color: var(--violet); font-style: italic; }
+      .body-inter { font-family: "Inter", sans-serif; }
+      .body-geist { font-family: "Geist", sans-serif; }
+      .lede { font-size: 19px; margin: 0 0 16px; }
+      .small { font-size: 14px; color: var(--muted); margin: 0 0 18px; }
+      .uirow { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+      .chip {
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 7px 12px;
+        font-size: 14px;
+      }
+      .btn {
+        background: var(--lime);
+        color: #0a0a0a;
+        border: 0;
+        border-radius: 10px;
+        padding: 10px 16px;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .section-title {
+        font-family: var(--display);
+        font-weight: 600;
+        font-size: 22px;
+        margin: 48px 0 16px;
+        letter-spacing: -0.01em;
+      }
+      table { border-collapse: collapse; width: 100%; }
+      th, td {
+        text-align: left;
+        padding: 10px 14px;
+        border-bottom: 1px solid var(--border);
+        font-size: 15px;
+      }
+      th { color: var(--muted); font-weight: 500; font-family: var(--display); }
+      .num { font-variant-numeric: tabular-nums; }
+      .n-inter { font-family: "Inter", sans-serif; }
+      .n-geistmono { font-family: "Geist Mono", monospace; }
+      .n-jetbrains { font-family: "JetBrains Mono", monospace; }
+      .dice {
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+      .note { color: var(--muted); font-size: 13px; margin-top: 8px; }
+    </style>
+  </head>
+  <body>
+    <h1 class="page-title">Spike de fonte — <span class="lime">QG do Mestre</span></h1>
+    <p class="page-sub">
+      Display fixo em Space Grotesk nos dois cartões. Compara o corpo em
+      <strong>Inter</strong> contra <em>Geist</em>, e três opções para números de
+      dados. Abra no navegador (tema dark) e julgue no seu monitor.
+    </p>
+
+    <div class="grid">
+      <!-- INTER -->
+      <div class="card">
+        <span class="tag">Corpo: Inter</span>
+        <h2 class="demo">QG do <span class="lime">Mestre</span></h2>
+        <p class="lede body-inter">
+          Seu QG de mestre de RPG. Toda a campanha, as notas de sessão e o seu
+          mundo param de viver espalhados em cinco apps.
+        </p>
+        <p class="small body-inter">
+          Prepare a próxima sessão, registre o que rolou na mesa e mantenha seus
+          <strong>jogadores</strong> e <em>NPCs</em> no mesmo lugar. Sem planilha
+          perdida, sem aba esquecida.
+        </p>
+        <div class="uirow body-inter">
+          <span class="chip">Campanhas</span>
+          <span class="chip">Diário do Mestre</span>
+          <span class="chip">Quadro de Ideias</span>
+          <button class="btn">Começar trial de 21 dias</button>
+        </div>
+      </div>
+
+      <!-- GEIST -->
+      <div class="card">
+        <span class="tag">Corpo: Geist</span>
+        <h2 class="demo">QG do <span class="lime">Mestre</span></h2>
+        <p class="lede body-geist">
+          Seu QG de mestre de RPG. Toda a campanha, as notas de sessão e o seu
+          mundo param de viver espalhados em cinco apps.
+        </p>
+        <p class="small body-geist">
+          Prepare a próxima sessão, registre o que rolou na mesa e mantenha seus
+          <strong>jogadores</strong> e <em>NPCs</em> no mesmo lugar. Sem planilha
+          perdida, sem aba esquecida.
+        </p>
+        <div class="uirow body-geist">
+          <span class="chip">Campanhas</span>
+          <span class="chip">Diário do Mestre</span>
+          <span class="chip">Quadro de Ideias</span>
+          <button class="btn">Começar trial de 21 dias</button>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="section-title">Números de dados / dados densos — qual mono?</h3>
+    <div class="grid">
+      <div class="card">
+        <span class="tag">Inter (tabular)</span>
+        <div class="dice num n-inter">d20: 17 · 4 · 20 · 11</div>
+        <table class="num n-inter">
+          <tr><th>Métrica</th><th>Valor</th></tr>
+          <tr><td>Iniciativa</td><td>+5</td></tr>
+          <tr><td>CA / PV</td><td>16 · 42/58</td></tr>
+          <tr><td>Sessão #12</td><td>3h20</td></tr>
+          <tr><td>MAU / MRR</td><td>134 · R$ 29,00</td></tr>
+        </table>
+      </div>
+      <div class="card">
+        <span class="tag">Geist Mono</span>
+        <div class="dice num n-geistmono">d20: 17 · 4 · 20 · 11</div>
+        <table class="num n-geistmono">
+          <tr><th>Métrica</th><th>Valor</th></tr>
+          <tr><td>Iniciativa</td><td>+5</td></tr>
+          <tr><td>CA / PV</td><td>16 · 42/58</td></tr>
+          <tr><td>Sessão #12</td><td>3h20</td></tr>
+          <tr><td>MAU / MRR</td><td>134 · R$ 29,00</td></tr>
+        </table>
+      </div>
+      <div class="card">
+        <span class="tag">JetBrains Mono</span>
+        <div class="dice num n-jetbrains">d20: 17 · 4 · 20 · 11</div>
+        <table class="num n-jetbrains">
+          <tr><th>Métrica</th><th>Valor</th></tr>
+          <tr><td>Iniciativa</td><td>+5</td></tr>
+          <tr><td>CA / PV</td><td>16 · 42/58</td></tr>
+          <tr><td>Sessão #12</td><td>3h20</td></tr>
+          <tr><td>MAU / MRR</td><td>134 · R$ 29,00</td></tr>
+        </table>
+      </div>
+    </div>
+    <p class="note">
+      Recomendação a confirmar: Inter no corpo (battle-tested, ótima em UI densa) +
+      Geist Mono nos números, OU Geist no corpo se quiser um tom mais geométrico e
+      contemporâneo. Veja a leitura comparativa no doc spike-fontes.md.
+    </p>
+  </body>
+</html>

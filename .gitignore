@@ -44,3 +44,7 @@ Thumbs.db
 # claude (uso interno, gitignored por regra global)
 .claude/INDEX.md
 .claude/CODEMAP.md
+
+# artefatos transientes de captura (Playwright/preview)
+.playwright-mcp/
+/spike-fontes-preview.jpeg
