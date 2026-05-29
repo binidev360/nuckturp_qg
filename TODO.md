@@ -35,16 +35,25 @@
 - [ ] Onda B · Interconexão (item 5) — mapa feature→componentes→tabelas→edge→externos + fluxos críticos.
 - [ ] Onda C · Index/CODEMAP (item 6) — expandir INDEX + gerar CODEMAP + mapa feature→dados.
 
-### Decisões abertas da Onda D (aguardam Marco)
+### Decisões resolvidas (rodada 2026-05-29) ✅
 
-- E1: easing canônico — `[0.4,0,0.2,1]` (fiel ao live) vs `[0.22,1,0.36,1]` (premium). E2: fonte de corpo (Inter vs Geist+mono). E3: D20 animado — Fase 5 ou spike. E4: jornadas do bottom-nav. E5: aplicar os P0 (page.tsx + reduced-motion) já?
+- D-A: Academy RLS = **só publicados + Premium no banco**.
+- D-B: **versionar `consent_links` + RLS antes do port** (LGPD).
+- D-C: SSRF = **exigir auth + hardening**.
+- Decoy/admin: **rota por secret + 404 + MFA no MVP**.
+- E1: easing = **token set** (`[0.22,1,0.36,1]` entradas + standard micro).
+- E2: fonte de corpo = **rodar spike Geist vs Inter** (decidir após).
+- E3: D20 = **Fase 5** (spec agora).
+- E4: bottom-nav = **adiado** (casca de navegação).
+- E5: **P0 aplicado** (page.tsx on-brand + reduced-motion WCAG).
 
-### Decisões abertas da Onda A (aguardam Marco)
+### Tarefas geradas pelas decisões (a executar)
 
-- D-A: modelo de acesso do catálogo Academy (RLS) — achado S9.
-- D-B: versionar `consent_links` + RLS antes do port (PII/LGPD) — S1.
-- D-C: `instagram-thumbnail`/`fetch-og-image` públicas (com allowlist) ou autenticadas — S2.
-- Validar design decoy+real (`admin-model.md`): formato da rota real + MFA já no MVP?
+- [ ] **Spike de fonte** (E2): comparar Geist vs Inter no corpo (+ avaliar mono p/ números) → recomendação visual.
+- [ ] Versionar `consent_links` + RPCs de consentimento com RLS (Fase 1, antes do port) — inventariar `manual-scripts/` primeiro.
+- [ ] Spec do D20 animado para a Fase 5 (capturar agora).
+- [ ] Hardening SSRF + auth nas functions de OG/thumbnail (Fase 1.4/6.3).
+- [ ] Camada de auth/admin com decoy+real+MFA (Fase 2).
 
 ## Decisões travadas (2026-05-28)
 

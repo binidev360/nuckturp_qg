@@ -43,13 +43,13 @@ As lentes **discordam por design**: taste/Tompkins pede ousadia/experimentação
 - **D20 como o momento Tompkins**: materializar o `FloatingDice` fantasma — idle imperceptível + tumble físico on-demand (CSS `@property` + `linear()`), guard de reduced-motion. (Decidir: Fase 5 normal ou spike próprio.)
 - `LazyMotion` + `MotionConfig reducedMotion="user"`; scroll-reveal com `viewport:{once:true}` + `useReducedMotion`; matar `transition: all` (~80 ocorrências no legado).
 
-## 5. Decisões abertas (Marco)
+## 5. Decisões (resolvidas 2026-05-29)
 
-- **E1 · Easing canônico:** o site no ar usa `[0.4, 0, 0.2, 1]` (Material standard); portei `[0.22, 1, 0.36, 1]` (ease-out-expo "premium"). Qual vira o token único?
-- **E2 · Fonte de corpo:** manter **Inter**, ou spike **Geist** + uma **mono** para números de rolagem/dados?
-- **E3 · D20 animado:** Fase 5 normal, ou spike próprio antes (é o diferencial de marca)?
-- **E4 · Bottom-nav:** quais 4-5 jornadas merecem slot fixo (idealmente validar com analytics do admin).
-- **E5:** aplico os **P0** já na nossa base agora?
+- **E1 · Easing:** ✅ **token set** — `[0.22, 1, 0.36, 1]` (expo, entradas/reveal) + curva standard (micro-interações).
+- **E2 · Fonte de corpo:** 🔬 **rodar spike Geist vs Inter** (+ avaliar mono p/ números) → decidir após comparação visual. Display segue Space Grotesk.
+- **E3 · D20 animado:** ✅ **Fase 5** (spec capturada agora; não furar a ordem).
+- **E4 · Bottom-nav:** ⏸️ **adiado** — decidir na casca de navegação (Fase 2/4), idealmente com analytics.
+- **E5 · P0:** ✅ **aplicado** — `page.tsx` reescrito on-brand (hero assimétrico, H1 sólido + 1 glow, copy de mestre 2ª pessoa, sem trinca/em-dash, sem loop infinito) + `reduced-motion` completo (transition + scroll-behavior, WCAG 2.3.3).
 
 ## 6. Nota sobre os artefatos
 

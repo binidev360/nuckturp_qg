@@ -161,26 +161,54 @@
     color: hsl(var(--foreground));
     font-family: var(--font-inter), system-ui, sans-serif;
   }
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-space-grotesk), system-ui, sans-serif;
   }
   /* Marca: <strong> = Cyber Lime (peso 650), <em> = Vapor Violet itálico. */
-  strong { color: hsl(var(--primary)); font-weight: 650; }
-  em { color: hsl(var(--secondary)); font-style: italic; }
+  strong {
+    color: hsl(var(--primary));
+    font-weight: 650;
+  }
+  em {
+    color: hsl(var(--secondary));
+    font-style: italic;
+  }
 }
 
 /* ── Keyframes essenciais (portados do app; o catálogo completo entra na Fase 5). ── */
 @keyframes fade-up {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @keyframes fade-in {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @keyframes pulse-lime {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.6; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
 }
 
 /* ── Utilities de marca ── */
@@ -188,9 +216,21 @@
   background-image: linear-gradient(135deg, hsl(82 100% 65%) 0%, hsl(268 100% 77%) 100%);
 }
 @utility text-glow-lime {
-  text-shadow: 0 0 20px hsl(82 100% 65% / 0.45), 0 0 40px hsl(82 100% 65% / 0.25);
+  text-shadow:
+    0 0 20px hsl(82 100% 65% / 0.45),
+    0 0 40px hsl(82 100% 65% / 0.25);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  html {
+    scroll-behavior: auto !important;
+  }
 }

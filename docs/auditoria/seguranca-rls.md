@@ -38,11 +38,12 @@ Mas há achados que **devem ser resolvidos antes/durante o port** (não herdar d
 - Isolamento multi-tenant via `get_user_tenant_id(auth.uid())` + `user_id`. Consistente na maioria; exceções nos achados S5/S9/S10.
 - **Boas práticas a preservar** (edge): `process-email-queue` exige claim service_role; `finance-extract-receipt` valida ownership de `storage_path`; `auth-email-hook` usa HMAC; `scraper` tem allowlist de host; `analyze-feedback` tem quota mensal.
 
-## 4. Decisões necessárias do Marco (antes de portar as policies)
+## 4. Decisões (resolvidas 2026-05-29)
 
-- **D-A · Modelo de acesso do catálogo Academy:** aberto a qualquer logado? só itens publicados? gate Premium **no banco** (RLS) ou só na UI? Isso muda as policies de `academy_*` (achado S9).
-- **D-B · `consent_links` / consentimento (S1):** confirmar que está em `manual-scripts/`; aprovar versionar como migration com RLS antes do port (PII/LGPD — prioridade).
-- **D-C · `instagram-thumbnail` / `fetch-og-image` (S2):** seguem públicas (com allowlist anti-SSRF) ou viram autenticadas?
+- **D-A · Academy (S9):** ✅ **só publicados + gate Premium no banco (RLS)**, não só UI. Rascunhos só admin.
+- **D-B · `consent_links` (S1):** ✅ **versionar como migration com RLS antes do port** (inventariar `manual-scripts/` primeiro). Prioridade LGPD.
+- **D-C · SSRF (S2):** ✅ **exigir auth + hardening** (allowlist de host, bloquear IP privado/metadata, sem redirect interno).
+- **Admin/decoy:** ✅ **rota real por secret server-side + 404 a não-admin + MFA/TOTP no MVP** (ver [admin-model.md](admin-model.md)).
 
 ## 5. Roadmap de remediação por fase
 

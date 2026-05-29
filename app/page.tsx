@@ -7,48 +7,37 @@ const FERRAMENTAS = [
 
 export default function Home() {
   return (
-    <main className="relative flex min-h-dvh flex-col items-center justify-center overflow-hidden px-6 py-20 text-center">
-      {/* Glow de marca ao fundo */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -top-1/3 left-1/2 -z-10 h-[60vh] w-[60vh] -translate-x-1/2 rounded-full bg-primary/10 blur-[120px]"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -bottom-1/3 right-0 -z-10 h-[40vh] w-[40vh] rounded-full bg-secondary/10 blur-[120px]"
-      />
+    <main className="flex min-h-dvh flex-col px-6 py-12 sm:px-12 lg:px-20">
+      <div className="flex flex-1 flex-col justify-center">
+        <div className="max-w-3xl">
+          <span className="border-primary/30 bg-primary/10 text-primary inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-medium tracking-wide">
+            <span className="bg-primary size-1.5 rounded-full" />
+            Reescrita Next.js · em construção
+          </span>
 
-      <span className="inline-flex animate-pulse-lime items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-medium tracking-wide text-primary">
-        <span className="size-1.5 rounded-full bg-primary" />
-        Reescrita Next.js · em construção
-      </span>
+          <h1 className="animate-fade-up font-display mt-8 text-6xl leading-[0.95] font-bold tracking-tight sm:text-8xl">
+            QG do <span className="text-primary text-glow-lime">Mestre</span>
+          </h1>
 
-      <h1 className="mt-8 animate-fade-up font-display text-5xl font-bold tracking-tight sm:text-7xl">
-        QG do{" "}
-        <span className="bg-gradient-nuckturp bg-clip-text text-transparent">
-          Mestre
-        </span>
-      </h1>
+          <p className="animate-fade-up text-muted-foreground mt-6 max-w-xl text-lg sm:text-xl">
+            Seu QG de mestre de RPG. Toda a campanha, as notas de sessão e o seu mundo param de
+            viver espalhados em cinco apps.
+          </p>
 
-      <p className="mt-6 max-w-xl animate-fade-up text-lg text-muted-foreground sm:text-xl">
-        O hub do mestre de RPG. Organize <strong>campanhas</strong>, documente{" "}
-        <em>sessões</em> e crie mundos — num só lugar.
-      </p>
+          <ul className="mt-10 flex flex-wrap gap-2.5 text-sm">
+            {FERRAMENTAS.map((nome) => (
+              <li
+                key={nome}
+                className="border-border bg-card text-card-foreground rounded-lg border px-3.5 py-2"
+              >
+                {nome}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
 
-      <ul className="mt-10 flex max-w-2xl flex-wrap items-center justify-center gap-3">
-        {FERRAMENTAS.map((nome) => (
-          <li
-            key={nome}
-            className="rounded-lg border border-border bg-card px-4 py-2 text-sm text-card-foreground"
-          >
-            {nome}
-          </li>
-        ))}
-      </ul>
-
-      <footer className="absolute bottom-6 text-xs text-muted-foreground">
-        Nuckturp · nuckturp.com.br
-      </footer>
+      <footer className="text-muted-foreground text-xs">Nuckturp · nuckturp.com.br</footer>
     </main>
   );
 }
