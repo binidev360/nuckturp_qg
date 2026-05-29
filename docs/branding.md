@@ -1,6 +1,8 @@
 # QG do Mestre — Nuckturp · Guia de Identidade Visual
 
 > Portado para o QG em 2026-05-28 — correções aplicadas: hospedagem = VPS "A"; gerenciador = npm. Documento vivo; a fonte original em Nuckturp_2.1 é read-only.
+>
+> **Erratas pós-inventário (2026-05-29):** valores reais validados em [inventario/ui-componentes.md](inventario/ui-componentes.md) e já portados em `app/globals.css`. Ajustes vs. este texto: `--grid-gray` real é `60 5% 80%` (não `0 0% 30%`); `--cyber-lime`/`--vapor-violet`/`--noir-void`/`--grid-gray` **não são redefinidas no `.dark`** (herdam o light) — as cores vivas no dark vêm de `--primary`/`--secondary`/`--background`; **`FloatingDice` não existe** no código (D20 = `DiceIcons.tsx` + PNG; criar de propósito na Fase 5); as cores semânticas (warning/success/info/caution), o gradiente `bg-gradient-nuckturp` (135° lime→violet) e os keyframes existem no código e estão em `app/globals.css`.
 
 > Referência rápida de cores, tipografia e elementos visuais do projeto.
 
@@ -10,25 +12,25 @@
 
 ### Cores principais da marca
 
-| Nome           | HSL                  | HEX (aprox.) | Uso                                                              |
-| -------------- | -------------------- | ------------ | ---------------------------------------------------------------- |
-| **Cyber Lime** | `82 100% 65%`       | `#C4FF4D`    | Cor primária, CTAs, destaques, links, ícone ativo, `<strong>`    |
-| **Vapor Violet** | `268 100% 77%`    | `#BA8CFF`    | Cor secundária, ênfase (`<em>`), variações de destaque, badges   |
-| **Noir Void**  | `0 0% 10%`          | `#1A1A1A`    | Fundo principal, base do tema dark                               |
+| Nome             | HSL            | HEX (aprox.) | Uso                                                            |
+| ---------------- | -------------- | ------------ | -------------------------------------------------------------- |
+| **Cyber Lime**   | `82 100% 65%`  | `#C4FF4D`    | Cor primária, CTAs, destaques, links, ícone ativo, `<strong>`  |
+| **Vapor Violet** | `268 100% 77%` | `#BA8CFF`    | Cor secundária, ênfase (`<em>`), variações de destaque, badges |
+| **Noir Void**    | `0 0% 10%`     | `#1A1A1A`    | Fundo principal, base do tema dark                             |
 
 ### Cores de suporte (tokens semânticos)
 
-| Token               | HSL                  | Uso                                                    |
-| -------------------- | -------------------- | ------------------------------------------------------ |
-| `--background`       | `0 0% 10%`          | Fundo geral da aplicação                               |
-| `--foreground`       | `80 100% 95%`       | Texto principal (quase branco com leve tom esverdeado)  |
-| `--card`             | `0 0% 12%`          | Fundo de cards, painéis e modais                       |
-| `--muted`            | `0 0% 18%`          | Fundos sutis, áreas inativas                           |
-| `--muted-foreground` | `0 0% 55%`          | Texto secundário, placeholders, legendas               |
-| `--border`           | `0 0% 22%`          | Bordas e divisores                                     |
-| `--destructive`      | `0 84% 60%`         | Ações destrutivas (remover, deletar)                   |
-| `--grid-gray`        | `0 0% 30%`          | Linhas de grid e guias visuais (whiteboard)            |
-| `--sidebar-background` | `0 0% 8%`         | Fundo da sidebar (mais escuro que o background)        |
+| Token                  | HSL           | Uso                                                    |
+| ---------------------- | ------------- | ------------------------------------------------------ |
+| `--background`         | `0 0% 10%`    | Fundo geral da aplicação                               |
+| `--foreground`         | `80 100% 95%` | Texto principal (quase branco com leve tom esverdeado) |
+| `--card`               | `0 0% 12%`    | Fundo de cards, painéis e modais                       |
+| `--muted`              | `0 0% 18%`    | Fundos sutis, áreas inativas                           |
+| `--muted-foreground`   | `0 0% 55%`    | Texto secundário, placeholders, legendas               |
+| `--border`             | `0 0% 22%`    | Bordas e divisores                                     |
+| `--destructive`        | `0 84% 60%`   | Ações destrutivas (remover, deletar)                   |
+| `--grid-gray`          | `0 0% 30%`    | Linhas de grid e guias visuais (whiteboard)            |
+| `--sidebar-background` | `0 0% 8%`     | Fundo da sidebar (mais escuro que o background)        |
 
 ### Regras de uso de cor
 
@@ -43,10 +45,10 @@
 
 ### Fontes
 
-| Fonte             | Variável Tailwind  | Pesos disponíveis     | Uso                                         |
-| ----------------- | ------------------ | --------------------- | ------------------------------------------- |
-| **Space Grotesk** | `font-display`     | 400, 500, 600, 700    | Títulos (h1–h6), destaques, branding        |
-| **Inter**         | `font-sans`        | 300–900               | Corpo de texto, UI, formulários, botões     |
+| Fonte             | Variável Tailwind | Pesos disponíveis  | Uso                                     |
+| ----------------- | ----------------- | ------------------ | --------------------------------------- |
+| **Space Grotesk** | `font-display`    | 400, 500, 600, 700 | Títulos (h1–h6), destaques, branding    |
+| **Inter**         | `font-sans`       | 300–900            | Corpo de texto, UI, formulários, botões |
 
 ### Regras de tipografia
 
@@ -60,11 +62,11 @@
 
 ## 3. Iconografia & Logo
 
-| Elemento                  | Arquivo                                          | Uso                                        |
-| ------------------------- | ------------------------------------------------ | ------------------------------------------ |
-| Logo (texto branco)       | `src/assets/nuckturp-aventura-logo-white.png`    | Header, landing page, branding             |
-| Ícone D20 (branco)        | `src/assets/nuckturp-dado-white.png`             | Favicon, ícone de app, loading             |
-| Favicon                   | `public/favicon.png`                             | Aba do navegador                           |
+| Elemento            | Arquivo                                       | Uso                            |
+| ------------------- | --------------------------------------------- | ------------------------------ |
+| Logo (texto branco) | `src/assets/nuckturp-aventura-logo-white.png` | Header, landing page, branding |
+| Ícone D20 (branco)  | `src/assets/nuckturp-dado-white.png`          | Favicon, ícone de app, loading |
+| Favicon             | `public/favicon.png`                          | Aba do navegador               |
 
 ### Dado D20
 
@@ -148,14 +150,14 @@ Quando botões aparecem sobre imagens de banner:
 
 ## 8. Nomenclatura da Marca
 
-| Contexto          | Nome correto                     |
-| ----------------- | -------------------------------- |
-| Nome do produto   | **QG do Mestre**                 |
-| Marca/sufixo      | **Nuckturp**                     |
-| Título completo   | **QG do Mestre — Nuckturp**      |
-| SEO / Marketing   | "QG do Mestre — Nuckturp"        |
-| URL publicada     | `nuckturp.com.br`                |
+| Contexto        | Nome correto                |
+| --------------- | --------------------------- |
+| Nome do produto | **QG do Mestre**            |
+| Marca/sufixo    | **Nuckturp**                |
+| Título completo | **QG do Mestre — Nuckturp** |
+| SEO / Marketing | "QG do Mestre — Nuckturp"   |
+| URL publicada   | `nuckturp.com.br`           |
 
 ---
 
-*Documento gerado em 26/02/2026. Fonte: `src/index.css`, `tailwind.config.ts`, memórias do projeto.*
+_Documento gerado em 26/02/2026. Fonte: `src/index.css`, `tailwind.config.ts`, memórias do projeto._

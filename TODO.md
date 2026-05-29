@@ -5,6 +5,7 @@
 > Slow and steady — 8 fases × 5 sub-fases + Fase 00 (spikes GO/NO-GO). Nada avança sem o anterior validado.
 
 ## Em andamento (preparação — Supabase pendente)
+
 - [x] Frente 1 — Inventários do app antigo → `docs/inventario/` (schema, edge-functions, rotas-slugs, modulos).
 - [x] Frente 3 — Suíte de docs portada para `docs/` (VPS "A" + npm) + planos dos spikes 00.1 e 00.4.
 - [x] Frente 2 (scripts) — Migração portada/corrigida em `scripts/` (export/import com schema `auth`).
@@ -13,20 +14,27 @@
 - [ ] (bloqueado) Fase 00.1 auth spike → aguarda acesso ao Lovable.
 
 ## Front — Fase 0 (gate da Fase 00 furado conscientemente pelo Marco)
+
 > Decisão do Marco (2026-05-28): começar a fundação antes do GO da Fase 00, limitada ao que NÃO depende de auth (parar antes da Fase 2). Risco assumido: retrabalho se o spike 00.1 abortar.
+
 - [x] Prep front: inventário de UI (`docs/inventario/ui-componentes.md`) + extração designlang (`docs/inventario/designlang/`).
 - [x] **0.1 Scaffold Next 16** (App Router, TS strict, `output: 'standalone'`, Turbopack, Tailwind v4, alias `@/*`). `npm run build` verde.
 - [x] 0.2 Design aplicado: tokens HSL dark-first (valores reais do app), Space Grotesk + Inter via `next/font`, Tailwind v4, gradiente nuckturp + `<strong>`/`<em>` de marca. Build verde + screenshot conferido. (Pendente: refletir as 6 divergências em `design-system.md`/`branding.md`; `FloatingDice` → Fase 5.)
 - [x] 0.5 App shell: layout pt-BR dark + metadata Nuckturp + placeholder com a identidade (badge, gradiente, chips).
+- [x] 0.4 Qualidade: ESLint `no-alert`, Prettier, husky+lint-staged (pre-commit validado), Vitest (3 testes), Playwright base (channel chrome). lint/typecheck/test verdes.
+- [x] Docs: erratas em design-system.md/branding.md (apontam ui-componentes.md) + assets de marca copiados p/ `public/`.
+- [ ] 0.3 Camada Supabase (`@supabase/ssr`) — depende de um projeto Supabase (bloqueado).
 - [ ] ⏸️ **PARAR AQUI** — Fase 2 (auth) é refém do spike 00.1; aguarda acesso ao Lovable.
 
 > Restante bloqueado: spikes 00.1/00.4 e Fase 1 dependem do acesso ao Lovable/Supabase.
 
 ## Decisões travadas (2026-05-28)
+
 - Hospedagem = **VPS "A"** (D3/ADR-0003). START-HERE.md corrigido; PRD/ops/architecture do projeto antigo seguem desatualizados (read-only, corrigir ao portar docs).
 - Gerenciador de pacotes = **npm** (consistente com os 5 projetos Next do Marco; trocar pnpm→npm ao portar docs).
 
 ## Próximo (bloqueado por confirmação + acessos)
+
 - [ ] **Fase 00 — Spikes de viabilidade (GO/NO-GO).** Requer acessos que o Marco abre sob demanda.
   - [ ] 00.1 Auth/senha: `pg_dump` schema `auth` do Lovable; provar leitura de `encrypted_password` + `auth.identities`; confirmar bcrypt GoTrue; testar import + login email/Google/identidade dupla. **NO-GO aborta.**
   - [ ] 00.2 Credenciais: connection string `Direct` + `service_role` sem transfer ownership; confirmar Google client_id/secret. Se exigir transfer ⇒ decisão do Marco.
@@ -35,6 +43,7 @@
   - [ ] 00.5 GO/NO-GO documentado (POC validado vs aposta).
 
 ## Fases (macro — detalhe no plano-mestre)
+
 - [ ] Fase 0 — Fundação & arquitetura (scaffold, design system, camada Supabase, qualidade, app shell). Local.
 - [ ] Fase 1 — Schema-first (clonar backend sem dados; RLS, triggers, functions, ~26 Edge Functions, seed).
 - [ ] Fase 2 — Núcleo: Auth + shell + design. Inclui **2.2 dry-run de senha/identities** (risco nº 1).
@@ -46,10 +55,12 @@
 - [ ] Fase 8 — Pós-cutover (Search Console, erros, e-mails/push/Stripe/cron, descomissionar Lovable).
 
 ## Concluído recente
+
 - [x] Ler os dois arquivos de orientação (CLAUDE.md, START-HERE.md) e confirmar entendimento de alto nível.
 - [x] `git init` + primeiro commit + push para `origin/main` (https://github.com/binidev360/nuckturp_qg.git).
 - [x] Criar `.gitignore`, `README.md`, memória do projeto e este `TODO.md`.
 - [x] Ler docs core do projeto antigo: MIGRACAO-NEXTJS, PRD, architecture, developer_guide, ADR-0001..0005, design-system, branding, security, ops, testing, api.
 
 ## Guardrails (resumo — detalhe em CLAUDE.md/START-HERE.md)
+
 Não tocar no projeto antigo (read-only) · preservar UUIDs+identities no cutover · mesmos slugs (SEO) · sem diálogo nativo (`no-alert`) · só tokens de design · RLS em tudo · `service_role` só server · Context7 antes de codar · licença proprietária · pt-BR.
