@@ -18,7 +18,8 @@ Modelo freemium morre · R$29 · home = página de vendas · Academia removida d
 - [ ] Metering de IA (quota base) + add-on pago de requisições (conecta achado S8).
 - [ ] Grandfather: marcar todos os migrados como VIP no cutover + regra de inatividade p/ revogar.
 - [ ] Academia: remover UI/rotas `/journey/*` do escopo de port; decidir destino das URLs e das tabelas `academy_*`.
-- [ ] Resolver confirmações C1–C7 (rodada futura) — C2 (SEO público aberto) é crítica.
+- [x] Confirmações C1–C7 resolvidas (2026-05-29): R$29/mês+trial 21d · SEO público aberto · WorldCraft via Stripe · IA quota base+add-on · VIP revoga 90d · manter tabelas academy\_\* · MesaQuest cupom (mecanismo+% a definir).
+- [ ] Pendências derivadas: números de pricing da IA (C4) · mecanismo+% do cupom MesaQuest (C7) · confirmar mesmo Stripe account QG↔WorldCraft (pré-req C3).
 
 ## Em andamento (preparação — Supabase pendente)
 
