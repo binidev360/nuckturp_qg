@@ -16,9 +16,9 @@
 > Decisão do Marco (2026-05-28): começar a fundação antes do GO da Fase 00, limitada ao que NÃO depende de auth (parar antes da Fase 2). Risco assumido: retrabalho se o spike 00.1 abortar.
 - [x] Prep front: inventário de UI (`docs/inventario/ui-componentes.md`) + extração designlang (`docs/inventario/designlang/`).
 - [x] **0.1 Scaffold Next 16** (App Router, TS strict, `output: 'standalone'`, Turbopack, Tailwind v4, alias `@/*`). `npm run build` verde.
-- [ ] 0.2 Design aplicado: tokens HSL (do código real, corrigindo as 6 divergências), fontes Space Grotesk + Inter (`next/font`), globals/Tailwind. Decidir Tailwind v3 vs v4 e o caso `FloatingDice`.
-- [ ] 0.5 App shell: layout dark, providers, placeholder com a identidade.
-- [ ] PARAR antes da Fase 2 (auth) — refém do spike 00.1.
+- [x] 0.2 Design aplicado: tokens HSL dark-first (valores reais do app), Space Grotesk + Inter via `next/font`, Tailwind v4, gradiente nuckturp + `<strong>`/`<em>` de marca. Build verde + screenshot conferido. (Pendente: refletir as 6 divergências em `design-system.md`/`branding.md`; `FloatingDice` → Fase 5.)
+- [x] 0.5 App shell: layout pt-BR dark + metadata Nuckturp + placeholder com a identidade (badge, gradiente, chips).
+- [ ] ⏸️ **PARAR AQUI** — Fase 2 (auth) é refém do spike 00.1; aguarda acesso ao Lovable.
 
 > Restante bloqueado: spikes 00.1/00.4 e Fase 1 dependem do acesso ao Lovable/Supabase.
 
