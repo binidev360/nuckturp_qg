@@ -4,8 +4,10 @@
 > Fonte de verdade do plano: `D:\ProjetoAntigravity\Nuckturp_2.1\nuckturp\docs\MIGRACAO-NEXTJS.md` (APPROVED).
 > Slow and steady — 8 fases × 5 sub-fases + Fase 00 (spikes GO/NO-GO). Nada avança sem o anterior validado.
 
-## Em andamento
-- [ ] **Fase 00 — aguardando acessos.** Próxima ação concreta: 00.1 (auth spike) → pedir ao Marco a connection string do Supabase no Lovable.
+## Em andamento (preparação — Supabase pendente)
+- [x] Frente 1 — Inventários do app antigo → `docs/inventario/` (schema, edge-functions, rotas-slugs, modulos).
+- [ ] Frente 3 — Portar/atualizar a suíte de docs no QG (VPS "A" + npm) + plano do spike 00.4.
+- [ ] (bloqueado) Fase 00.1 auth spike → aguarda acesso ao Lovable.
 
 ## Decisões travadas (2026-05-28)
 - Hospedagem = **VPS "A"** (D3/ADR-0003). START-HERE.md corrigido; PRD/ops/architecture do projeto antigo seguem desatualizados (read-only, corrigir ao portar docs).
