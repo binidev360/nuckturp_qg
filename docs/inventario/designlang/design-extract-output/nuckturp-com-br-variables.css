@@ -1,0 +1,171 @@
+:root {
+  /* Colors — Primary */
+  --color-primary: #beff4d;
+  --color-secondary: #c08aff;
+  --color-accent: #77b30f;
+
+  /* Colors — Neutrals */
+  --color-neutral-50: #383838;
+  --color-neutral-100: #f7ffe6;
+  --color-neutral-200: #8c8c8c;
+  --color-neutral-300: #000000;
+  --color-neutral-400: #1f1f1f;
+  --color-neutral-500: #0f0f0f;
+  --color-neutral-600: #2e2e2e;
+  --color-neutral-700: #f6f6f4;
+  --color-neutral-800: #ffffff;
+
+  /* Colors — Backgrounds */
+  --color-bg: #1a1a1a;
+  --color-bg-1: #1f1f1f;
+  --color-bg-2: #beff4d;
+  --color-bg-3: #2e2e2e;
+
+  /* Colors — Text */
+  --color-text: #000000;
+  --color-text-1: #f7ffe6;
+  --color-text-2: #8c8c8c;
+  --color-text-3: #0f0f0f;
+  --color-text-4: #beff4d;
+
+  /* Typography — Families */
+  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Space Grotesk', sans-serif;
+
+  /* Typography — Scale */
+  --font-size-96: 96px;
+  --font-size-36: 36px;
+  --font-size-30: 30px;
+  --font-size-24: 24px;
+  --font-size-20: 20px;
+  --font-size-16: 16px;
+  --font-size-14: 14px;
+  --font-size-12: 12px;
+  --font-size-10: 10px;
+
+  /* Spacing */
+  --spacing-2: 2px;
+  --spacing-96: 96px;
+  --spacing-128: 128px;
+  --spacing-152: 152px;
+  --spacing-192: 192px;
+  --spacing-256: 256px;
+
+  /* Border Radius */
+  --radius-lg: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Box Shadows */
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(132, 255, 0, 0.2) 0px 0px 20px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(190, 255, 77, 0.05) 0px 25px 50px -12px;
+  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(190, 255, 77, 0.25) 0px 10px 15px -3px, rgba(190, 255, 77, 0.25) 0px 4px 6px -4px;
+
+  /* Original Site Variables */
+  /* — colors — */
+  --foreground: 0 0% 12%;
+  --card: 60 10% 99%;
+  --card-foreground: 0 0% 12%;
+  --popover: 60 10% 99%;
+  --popover-foreground: 0 0% 12%;
+  --primary: 82 85% 38%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 268 60% 55%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 60 10% 92%;
+  --muted-foreground: 0 0% 42%;
+  --accent: 82 85% 38%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 60 5% 85%;
+  --ring: 82 85% 38%;
+  --sidebar-foreground: 0 0% 12%;
+  --sidebar-primary: 82 85% 38%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 60 10% 93%;
+  --sidebar-accent-foreground: 0 0% 12%;
+  --sidebar-border: 60 5% 88%;
+  --sidebar-ring: 82 85% 38%;
+  --warning-foreground: 0 0% 100%;
+  --success-foreground: 0 0% 100%;
+  --info-foreground: 0 0% 100%;
+  --caution-foreground: 0 0% 100%;
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-ring-inset: ;
+  --tw-border-spacing-x: 0;
+  --tw-ring-color: rgb(59 130 246 / .5);
+  --tw-ring-offset-color: #fff;
+  --tw-ring-offset-width: 0px;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-border-spacing-y: 0;
+  /* — spacing — */
+  --tw-numeric-spacing: ;
+  --tw-contain-size: ;
+  /* — shadows — */
+  --tw-drop-shadow: ;
+  --tw-shadow: 0 0 #0000;
+  /* — radii — */
+  --radius: .75rem;
+  /* — other — */
+  --background: 60 10% 96%;
+  --input: 60 5% 85%;
+  --sidebar-background: 60 10% 98%;
+  --cyber-lime: 82 85% 38%;
+  --vapor-violet: 268 60% 55%;
+  --noir-void: 60 10% 96%;
+  --grid-gray: 60 5% 80%;
+  --warning: 45 93% 47%;
+  --success: 152 69% 31%;
+  --info: 213 94% 48%;
+  --caution: 25 95% 53%;
+  --tw-backdrop-sepia: ;
+  --tw-sepia: ;
+  --tw-ordinal: ;
+  --tw-backdrop-saturate: ;
+  --tw-contain-style: ;
+  --tw-backdrop-invert: ;
+  --tw-brightness: ;
+  --tw-backdrop-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-scale-y: 1;
+  --tw-pan-y: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-brightness: ;
+  --tw-pan-x: ;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-contrast: ;
+  --tw-skew-x: 0;
+  --tw-backdrop-blur: ;
+  --tw-translate-x: 0;
+  --tw-gradient-via-position: ;
+  --tw-saturate: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-grayscale: ;
+  --tw-scale-x: 1;
+  --tw-backdrop-hue-rotate: ;
+  --tw-gradient-to-position: ;
+  --tw-numeric-fraction: ;
+  --tw-skew-y: 0;
+  --tw-slashed-zero: ;
+  --tw-blur: ;
+  --tw-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-gradient-from-position: ;
+  --tw-numeric-figure: ;
+  --tw-pinch-zoom: ;
+  --tw-contain-paint: ;
+  --tw-contain-layout: ;
+  /* — semantic — */
+  success: [object Object];
+  warning: [object Object];
+  error: [object Object];
+  info: [object Object];
+
+}

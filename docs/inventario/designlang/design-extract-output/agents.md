@@ -1,0 +1,32 @@
+# Agent instructions — design system
+
+This project follows the design system extracted from https://nuckturp.com.br.
+Any coding agent working here must use the tokens below and avoid inventing new ones.
+Source: https://nuckturp.com.br
+Extracted by designlang v7.0.0 on 2026-05-29T02:27:22.746Z
+
+## Semantic tokens (use these)
+- color.action.primary: #beff4d
+- color.surface.default: #1a1a1a
+- color.text.body: #000000
+- radius.control: 12px
+- typography.body.fontFamily: Inter
+
+## Regions
+- content
+- nav
+- nav
+- hero
+- content
+- features
+- content
+- content
+- content
+- hero
+- footer
+
+## How to use
+- Prefer `semantic.*` tokens over `primitive.*`.
+- Never invent new tokens or hex values; reuse the ones above.
+- When a value is missing, pick the closest existing semantic token and flag the gap.
+- Reference tokens by their dotted path (e.g. `semantic.color.action.primary`).

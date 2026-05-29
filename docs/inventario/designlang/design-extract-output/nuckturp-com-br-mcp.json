@@ -1,0 +1,702 @@
+{
+  "colors": {
+    "all": [
+      {
+        "hex": "#383838",
+        "rgb": {
+          "r": 56,
+          "g": 56,
+          "b": 56,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 22
+        },
+        "count": 595,
+        "contexts": [
+          "border"
+        ]
+      },
+      {
+        "hex": "#f7ffe6",
+        "rgb": {
+          "r": 247,
+          "g": 255,
+          "b": 230,
+          "a": 1
+        },
+        "hsl": {
+          "h": 79,
+          "s": 100,
+          "l": 95
+        },
+        "count": 287,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#beff4d",
+        "rgb": {
+          "r": 190,
+          "g": 255,
+          "b": 77,
+          "a": 1
+        },
+        "hsl": {
+          "h": 82,
+          "s": 100,
+          "l": 65
+        },
+        "count": 108,
+        "contexts": [
+          "background",
+          "text",
+          "border"
+        ]
+      },
+      {
+        "hex": "#8c8c8c",
+        "rgb": {
+          "r": 140,
+          "g": 140,
+          "b": 140,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 55
+        },
+        "count": 98,
+        "contexts": [
+          "text",
+          "background"
+        ]
+      },
+      {
+        "hex": "#000000",
+        "rgb": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 0
+        },
+        "count": 84,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#1f1f1f",
+        "rgb": {
+          "r": 31,
+          "g": 31,
+          "b": 31,
+          "a": 0.5
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 12
+        },
+        "count": 31,
+        "contexts": [
+          "background",
+          "border"
+        ]
+      },
+      {
+        "hex": "#ef4343",
+        "rgb": {
+          "r": 239,
+          "g": 67,
+          "b": 67,
+          "a": 0.05
+        },
+        "hsl": {
+          "h": 0,
+          "s": 84,
+          "l": 60
+        },
+        "count": 30,
+        "contexts": [
+          "background",
+          "border",
+          "text"
+        ]
+      },
+      {
+        "hex": "#8847d1",
+        "rgb": {
+          "r": 136,
+          "g": 71,
+          "b": 209,
+          "a": 1
+        },
+        "hsl": {
+          "h": 268,
+          "s": 60,
+          "l": 55
+        },
+        "count": 22,
+        "contexts": [
+          "background",
+          "text"
+        ]
+      },
+      {
+        "hex": "#c08aff",
+        "rgb": {
+          "r": 192,
+          "g": 138,
+          "b": 255,
+          "a": 0.4
+        },
+        "hsl": {
+          "h": 268,
+          "s": 100,
+          "l": 77
+        },
+        "count": 21,
+        "contexts": [
+          "background",
+          "text"
+        ]
+      },
+      {
+        "hex": "#0f0f0f",
+        "rgb": {
+          "r": 15,
+          "g": 15,
+          "b": 15,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 6
+        },
+        "count": 10,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#2e2e2e",
+        "rgb": {
+          "r": 46,
+          "g": 46,
+          "b": 46,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 18
+        },
+        "count": 6,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#f6f6f4",
+        "rgb": {
+          "r": 246,
+          "g": 246,
+          "b": 244,
+          "a": 1
+        },
+        "hsl": {
+          "h": 60,
+          "s": 10,
+          "l": 96
+        },
+        "count": 1,
+        "contexts": [
+          "text"
+        ]
+      },
+      {
+        "hex": "#77b30f",
+        "rgb": {
+          "r": 119,
+          "g": 179,
+          "b": 15,
+          "a": 1
+        },
+        "hsl": {
+          "h": 82,
+          "s": 85,
+          "l": 38
+        },
+        "count": 1,
+        "contexts": [
+          "background"
+        ]
+      },
+      {
+        "hex": "#ffffff",
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 100
+        },
+        "count": 1,
+        "contexts": [
+          "text"
+        ]
+      }
+    ]
+  },
+  "regions": [
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": -4714,
+        "w": 1280,
+        "h": 0
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": null
+    },
+    {
+      "role": "nav",
+      "tag": "header",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 57
+      },
+      "heading": null,
+      "buttonCount": 3,
+      "cardCount": 7,
+      "className": "sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/40"
+    },
+    {
+      "role": "nav",
+      "tag": "nav",
+      "bounds": {
+        "x": 356.703125,
+        "y": 20,
+        "w": 383.3125,
+        "h": 16
+      },
+      "heading": null,
+      "buttonCount": 0,
+      "cardCount": 0,
+      "className": "hidden md:flex items-center gap-6 text-xs text-muted-foreground"
+    },
+    {
+      "role": "hero",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": -4657,
+        "w": 1280,
+        "h": 882
+      },
+      "heading": "Pare de\nImprovisar\na preparação.",
+      "buttonCount": 2,
+      "cardCount": 15,
+      "className": "relative overflow-hidden"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": -3775,
+        "w": 1280,
+        "h": 587
+      },
+      "heading": "Se você é mestre, já passou por isso",
+      "buttonCount": 0,
+      "cardCount": 8,
+      "className": "py-16 sm:py-20 border-t border-border/20"
+    },
+    {
+      "role": "features",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": -3188,
+        "w": 1280,
+        "h": 985.5
+      },
+      "heading": "9 ferramentas. Zero caos.",
+      "buttonCount": 0,
+      "cardCount": 19,
+      "className": "py-16 sm:py-20 bg-card/30 border-t border-border/20"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": -2202.5,
+        "w": 1280,
+        "h": 1487.625
+      },
+      "heading": "Seu QG. Tudo num relance.",
+      "buttonCount": 0,
+      "cardCount": 16,
+      "className": "py-16 sm:py-20 border-t border-border/20"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": -714.875,
+        "w": 1280,
+        "h": 395.5
+      },
+      "heading": "Por que o QG do Mestre é diferente",
+      "buttonCount": 0,
+      "cardCount": 3,
+      "className": "py-16 sm:py-20 bg-card/30 border-t border-border/20"
+    },
+    {
+      "role": "content",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": -319.375,
+        "w": 1280,
+        "h": 977.75
+      },
+      "heading": "Direto do QG",
+      "buttonCount": 1,
+      "cardCount": 26,
+      "className": "py-16 sm:py-20 border-t border-border/20"
+    },
+    {
+      "role": "hero",
+      "tag": "section",
+      "bounds": {
+        "x": 0,
+        "y": 658.375,
+        "w": 1280,
+        "h": 445
+      },
+      "heading": "Sua próxima sessão merece preparação épica",
+      "buttonCount": 1,
+      "cardCount": 2,
+      "className": "py-20 sm:py-24 bg-card/30 border-t border-border/20 relative overflow-hidden"
+    },
+    {
+      "role": "footer",
+      "tag": "footer",
+      "bounds": {
+        "x": 0,
+        "y": 1103.375,
+        "w": 1280,
+        "h": 426
+      },
+      "heading": null,
+      "buttonCount": 1,
+      "cardCount": 3,
+      "className": "border-t border-border/40 bg-gradient-to-b from-card/30 to-background"
+    }
+  ],
+  "componentClusters": [
+    {
+      "kind": "button",
+      "structuralHash": "button>svg",
+      "instanceCount": 5,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(140, 140, 140)",
+            "padding": "0px 12px 0px 12px",
+            "borderRadius": "12px",
+            "border": "0px solid rgb(56, 56, 56)",
+            "fontSize": "12px",
+            "fontWeight": "500"
+          },
+          "instanceCount": 1
+        },
+        {
+          "css": {
+            "background": "rgb(190, 255, 77)",
+            "color": "rgb(15, 15, 15)",
+            "padding": "0px 40px 0px 40px",
+            "borderRadius": "12px",
+            "border": "0px solid rgb(56, 56, 56)",
+            "fontSize": "16px",
+            "fontWeight": "700"
+          },
+          "instanceCount": 1
+        },
+        {
+          "css": {
+            "background": "rgb(26, 26, 26)",
+            "color": "rgb(247, 255, 230)",
+            "padding": "0px 40px 0px 40px",
+            "borderRadius": "12px",
+            "border": "1px solid rgb(56, 56, 56)",
+            "fontSize": "16px",
+            "fontWeight": "500"
+          },
+          "instanceCount": 1
+        },
+        {
+          "css": {
+            "background": "rgb(26, 26, 26)",
+            "color": "rgb(247, 255, 230)",
+            "padding": "0px 12px 0px 12px",
+            "borderRadius": "9999px",
+            "border": "1px solid rgb(56, 56, 56)",
+            "fontSize": "12px",
+            "fontWeight": "500"
+          },
+          "instanceCount": 2
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button>span>span",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(190, 255, 77)",
+            "color": "rgb(15, 15, 15)",
+            "padding": "0px 20px 0px 20px",
+            "borderRadius": "9999px",
+            "border": "0px solid rgb(56, 56, 56)",
+            "fontSize": "12px",
+            "fontWeight": "500"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "structuralHash": "div>div>div>div",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(31, 31, 31, 0.5)",
+            "color": "rgb(247, 255, 230)",
+            "padding": "24px 24px 24px 24px",
+            "borderRadius": "24px",
+            "border": "1px solid rgba(56, 56, 56, 0.3)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "structuralHash": "div",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(247, 255, 230)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "0px solid rgb(56, 56, 56)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "structuralHash": "section>div",
+      "instanceCount": 2,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(31, 31, 31, 0.3)",
+            "color": "rgb(247, 255, 230)",
+            "padding": "80px 0px 80px 0px",
+            "borderRadius": "0px",
+            "border": "1px 0px 0px solid rgba(56, 56, 56, 0.2)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 2
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "structuralHash": "div>div",
+      "instanceCount": 9,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(31, 31, 31)",
+            "color": "rgb(247, 255, 230)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "16px",
+            "border": "1px solid rgba(56, 56, 56, 0.6)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 9
+        }
+      ]
+    },
+    {
+      "kind": "link",
+      "structuralHash": "a>div>div",
+      "instanceCount": 6,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(31, 31, 31)",
+            "color": "rgb(247, 255, 230)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "12px",
+            "border": "1px solid rgba(56, 56, 56, 0.6)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 6
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "structuralHash": "section>div>div",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(31, 31, 31, 0.3)",
+            "color": "rgb(247, 255, 230)",
+            "padding": "96px 0px 96px 0px",
+            "borderRadius": "0px",
+            "border": "1px 0px 0px solid rgba(56, 56, 56, 0.2)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "structuralHash": "footer>div",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgba(0, 0, 0, 0)",
+            "color": "rgb(247, 255, 230)",
+            "padding": "0px 0px 0px 0px",
+            "borderRadius": "0px",
+            "border": "1px 0px 0px solid rgba(56, 56, 56, 0.4)",
+            "fontSize": "16px",
+            "fontWeight": "400"
+          },
+          "instanceCount": 1
+        }
+      ]
+    },
+    {
+      "kind": "button",
+      "structuralHash": "button",
+      "instanceCount": 1,
+      "variants": [
+        {
+          "css": {
+            "background": "rgb(190, 255, 77)",
+            "color": "rgb(15, 15, 15)",
+            "padding": "0px 20px 0px 20px",
+            "borderRadius": "9999px",
+            "border": "0px solid rgb(56, 56, 56)",
+            "fontSize": "12px",
+            "fontWeight": "500"
+          },
+          "instanceCount": 1
+        }
+      ]
+    }
+  ],
+  "accessibility": {
+    "remediation": []
+  },
+  "cssHealth": {
+    "sheets": [
+      {
+        "url": "https://nuckturp.com.br/assets/index-BzliBtuR.css",
+        "totalBytes": 220416,
+        "usedBytes": 23427,
+        "unusedBytes": 196989,
+        "unusedPercent": 89
+      },
+      {
+        "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap",
+        "totalBytes": 22449,
+        "usedBytes": 0,
+        "unusedBytes": 22449,
+        "unusedPercent": 100
+      }
+    ],
+    "totalBytes": 242865,
+    "usedBytes": 23427,
+    "unusedBytes": 219438,
+    "unusedPercent": 90,
+    "importantCount": 48,
+    "duplicates": 2410,
+    "vendorPrefixes": {
+      "webkit": 52,
+      "moz": 25,
+      "ms": 1,
+      "o": 5
+    },
+    "keyframes": [],
+    "specificity": {
+      "max": [
+        2,
+        9,
+        4
+      ],
+      "average": [
+        0,
+        1.76,
+        0.14
+      ],
+      "count": 3104
+    },
+    "issues": [
+      "48 !important rules",
+      "2410 duplicate declarations",
+      "90% unused CSS"
+    ]
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "tone": "neutral",
+  "pronoun": "third-person",
+  "headingStyle": "Title Case",
+  "headingLengthClass": "balanced",
+  "ctaVerbs": [
+    {
+      "value": "comece",
+      "count": 2
+    },
+    {
+      "value": "para",
+      "count": 2
+    },
+    {
+      "value": "lovecraft",
+      "count": 2
+    },
+    {
+      "value": "entrar",
+      "count": 1
+    },
+    {
+      "value": "criar",
+      "count": 1
+    },
+    {
+      "value": "veja",
+      "count": 1
+    },
+    {
+      "value": "ver",
+      "count": 1
+    },
+    {
+      "value": "chamado",
+      "count": 1
+    },
+    {
+      "value": "mulheres",
+      "count": 1
+    },
+    {
+      "value": "experimente",
+      "count": 1
+    }
+  ],
+  "buttonPatterns": [
+    {
+      "value": "comece grátis agora",
+      "count": 2
+    },
+    {
+      "value": "entrar",
+      "count": 1
+    },
+    {
+      "value": "criar conta grátis",
+      "count": 1
+    },
+    {
+      "value": "veja como funciona",
+      "count": 1
+    },
+    {
+      "value": "ver todas",
+      "count": 1
+    },
+    {
+      "value": "para mestres\no roteiro que derreteu\n\ndescubra como lidar com o improviso no rpg quando os jogadores ignoram seu roteiro e como a técnica de preparar situações p",
+      "count": 1
+    },
+    {
+      "value": "chamado de cthulhu\nusando sorte em chamado de cthulhu\n\naprenda como funciona a sorte em chamado de cthulhu\n\n22 abr 2026\n6 min de leitura",
+      "count": 1
+    },
+    {
+      "value": "mulheres no rpg\no amadurecimento do mestre: neurodivergência, carga mental e o desafio da campanha contínua\n\numa análise autocrítica de uma jogadora passando po",
+      "count": 1
+    },
+    {
+      "value": "lovecraft\nquando a previsibilidade arruína o horror\n\nentenda como a previsibilidade pode quebrar a imersão em campanhas de rpg de terror e aprenda a usar a expe",
+      "count": 1
+    },
+    {
+      "value": "para mestres\nusar clichês não é falta de criatividade\n\ndescubra por que usar clichês no rpg é uma estratégia inteligente de narrativa. aprenda a subverter expec",
+      "count": 1
+    },
+    {
+      "value": "lovecraft\num forte candidato ao rpg nacional do ano que você precisa conhecer\n\nmelted lands da anatopia: forte candidato a rpg nacional do ano. sabia o porquê d",
+      "count": 1
+    },
+    {
+      "value": "experimente grátis",
+      "count": 1
+    }
+  ],
+  "sampleHeadings": [
+    "Pare de\nImprovisar\na preparação.",
+    "Se você é mestre, já passou por isso",
+    "9 ferramentas. Zero caos.",
+    "Gestão de Campanhas",
+    "Jogadores & Personagens",
+    "Diário do Mestre",
+    "Agenda de Sessões",
+    "Seu QG. Tudo num relance.",
+    "Dezenas de sessões. Zero bagunça.",
+    "Agenda inteligente para mestres ocupados"
+  ],
+  "stats": {
+    "buttons": 13,
+    "headings": 21
+  }
+}

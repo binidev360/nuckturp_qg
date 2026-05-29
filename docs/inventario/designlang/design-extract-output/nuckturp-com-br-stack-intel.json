@@ -1,0 +1,11 @@
+{
+  "cms": [],
+  "analytics": [
+    "google-analytics"
+  ],
+  "experimentation": [],
+  "signals": {
+    "scriptCount": 5,
+    "metaCount": 22
+  }
+}

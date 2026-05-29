@@ -1,0 +1,58 @@
+{
+  "openGraph": {
+    "type": "website",
+    "image": "https://nuckturp.com.br/og-image.jpg",
+    "image:width": "1200",
+    "image:height": "630",
+    "url": "https://nuckturp.com.br/",
+    "site_name": "QG do Mestre — Nuckturp",
+    "title": "QG do Mestre — Nuckturp | Plataforma para Mestres de RPG",
+    "description": "O QG definitivo do mestre de RPG. Organize campanhas, sessões, notas e ideias de D&D, Pathfinder e qualquer sistema de RPG de mesa. Gratuito.",
+    "locale": "pt_BR"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "image": "https://nuckturp.com.br/og-image.jpg",
+    "title": "QG do Mestre — Nuckturp | Plataforma para Mestres de RPG",
+    "description": "O QG definitivo do mestre de RPG. Organize campanhas, sessões, notas e ideias de D&D, Pathfinder e qualquer sistema de RPG de mesa. Gratuito."
+  },
+  "description": "O QG definitivo do mestre de RPG. Organize campanhas, sessões, notas e ideias de D&D, Pathfinder e qualquer sistema de RPG de mesa. Gratuito.",
+  "canonical": null,
+  "themeColor": "#B6FF00",
+  "viewport": "width=device-width, initial-scale=1.0",
+  "favicons": [
+    {
+      "rel": "apple-touch-icon",
+      "href": "https://nuckturp.com.br/pwa-192x192.png",
+      "sizes": "",
+      "type": ""
+    }
+  ],
+  "manifest": "https://nuckturp.com.br/manifest.webmanifest",
+  "structuredData": [
+    {
+      "type": "WebSite",
+      "name": "QG do Mestre — Nuckturp",
+      "sample": "{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"name\":\"QG do Mestre — Nuckturp\",\"url\":\"https://nuckturp.com.br\",\"potentialAction\":{\"@type\":\"SearchAction\",\"target\":\"https://nuckturp.com.br/novidades?q={search_term_string}\",\"query-input\":\"required name=search_term_string\"}}"
+    },
+    {
+      "type": "Organization",
+      "name": "Nuckturp",
+      "sample": "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Nuckturp\",\"alternateName\":\"QG do Mestre\",\"url\":\"https://nuckturp.com.br\",\"logo\":\"https://nuckturp.com.br/nuckturp-logo-white.png\",\"description\":\"Plataforma gratuita para mestres de RPG de mesa organizarem campanhas, sessões, notas e ideias.\",\"sameAs\":[\"https://www.instagram.com/nuckturp\",\"https://www.youtube.com/@nuckturp\"],\"foundingD"
+    },
+    {
+      "type": "FAQPage",
+      "name": null,
+      "sample": "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"O que é o QG do Mestre?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"O QG do Mestre é uma plataforma gratuita para mestres de RPG organizarem campanhas, sessões, notas e ideias em um só lugar. Ideal para quem joga D&D, Pathfinder, Call of Cthulhu e outros sistemas.\"}},{\"@type\":\"Question\",\"name\":\"O QG do Mes"
+    }
+  ],
+  "score": {
+    "hasOg": true,
+    "hasTwitter": true,
+    "hasDescription": true,
+    "hasCanonical": false,
+    "hasStructuredData": true,
+    "hasFavicon": true,
+    "hasThemeColor": true
+  }
+}

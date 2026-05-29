@@ -1,0 +1,291 @@
+{
+  "pageIntent": {
+    "type": "landing",
+    "confidence": 0.45,
+    "path": "/",
+    "title": "QG do Mestre — Nuckturp | Plataforma para Mestres de RPG",
+    "description": "O QG definitivo do mestre de RPG. Organize campanhas, sessões, notas e ideias de D&D, Pathfinder e qualquer sistema de RPG de mesa. Gratuito.",
+    "signals": [
+      {
+        "kind": "url",
+        "type": "landing",
+        "weight": 0.45,
+        "detail": "root-path"
+      }
+    ],
+    "alternates": [],
+    "needsSmart": true
+  },
+  "sectionRoles": {
+    "sections": [
+      {
+        "index": 0,
+        "tag": "section",
+        "role": "content",
+        "subrole": null,
+        "confidence": 0.3,
+        "heading": null,
+        "bounds": {
+          "x": 0,
+          "y": -4714,
+          "w": 1280,
+          "h": 0
+        },
+        "buttonCount": 0,
+        "cardCount": 0,
+        "slots": {},
+        "needsSmart": true
+      },
+      {
+        "index": 1,
+        "tag": "header",
+        "role": "nav",
+        "subrole": null,
+        "confidence": 0.4,
+        "heading": null,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 57
+        },
+        "buttonCount": 3,
+        "cardCount": 7,
+        "slots": {
+          "ctaCount": 3,
+          "lede": "Por que usar\nFuncionalidades\nComo funciona\nNovidades\nEntrar\nCriar conta grátis"
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 2,
+        "tag": "nav",
+        "role": "nav",
+        "subrole": null,
+        "confidence": 0.9,
+        "heading": null,
+        "bounds": {
+          "x": 356.703125,
+          "y": 20,
+          "w": 383.3125,
+          "h": 16
+        },
+        "buttonCount": 0,
+        "cardCount": 0,
+        "slots": {
+          "lede": "Por que usar\nFuncionalidades\nComo funciona\nNovidades"
+        },
+        "needsSmart": false
+      },
+      {
+        "index": 3,
+        "tag": "section",
+        "role": "hero",
+        "subrole": null,
+        "confidence": 0.85,
+        "heading": "Pare de\nImprovisar\na preparação.",
+        "bounds": {
+          "x": 0,
+          "y": -4657,
+          "w": 1280,
+          "h": 882
+        },
+        "buttonCount": 2,
+        "cardCount": 15,
+        "slots": {
+          "heading": "Pare de\nImprovisar\na preparação.",
+          "ctaCount": 2,
+          "lede": "O QG definitivo do Mestre de RPG\nPare de\nImprovisar\na preparação."
+        },
+        "needsSmart": false
+      },
+      {
+        "index": 4,
+        "tag": "section",
+        "role": "content",
+        "subrole": null,
+        "confidence": 0.3,
+        "heading": "Se você é mestre, já passou por isso",
+        "bounds": {
+          "x": 0,
+          "y": -3775,
+          "w": 1280,
+          "h": 587
+        },
+        "buttonCount": 0,
+        "cardCount": 8,
+        "slots": {
+          "heading": "Se você é mestre, já passou por isso"
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 5,
+        "tag": "section",
+        "role": "testimonial",
+        "subrole": null,
+        "confidence": 0.8,
+        "heading": "9 ferramentas. Zero caos.",
+        "bounds": {
+          "x": 0,
+          "y": -3188,
+          "w": 1280,
+          "h": 985.5
+        },
+        "buttonCount": 0,
+        "cardCount": 19,
+        "slots": {
+          "heading": "9 ferramentas. Zero caos.",
+          "subheadings": [
+            "Gestão de Campanhas",
+            "Jogadores & Personagens",
+            "Diário do Mestre",
+            "Agenda de Sessões"
+          ],
+          "lede": "Seu arsenal completo\n9 ferramentas. Zero caos."
+        },
+        "needsSmart": false
+      },
+      {
+        "index": 6,
+        "tag": "section",
+        "role": "testimonial",
+        "subrole": null,
+        "confidence": 0.8,
+        "heading": "Seu QG. Tudo num relance.",
+        "bounds": {
+          "x": 0,
+          "y": -2202.5,
+          "w": 1280,
+          "h": 1487.625
+        },
+        "buttonCount": 0,
+        "cardCount": 16,
+        "slots": {
+          "heading": "Seu QG. Tudo num relance.",
+          "subheadings": [
+            "Dezenas de sessões. Zero bagunça.",
+            "Agenda inteligente para mestres ocupados",
+            "Mapeie tramas no Quadro de Ideias"
+          ]
+        },
+        "needsSmart": false
+      },
+      {
+        "index": 7,
+        "tag": "section",
+        "role": "content",
+        "subrole": null,
+        "confidence": 0.3,
+        "heading": "Por que o QG do Mestre é diferente",
+        "bounds": {
+          "x": 0,
+          "y": -714.875,
+          "w": 1280,
+          "h": 395.5
+        },
+        "buttonCount": 0,
+        "cardCount": 3,
+        "slots": {
+          "heading": "Por que o QG do Mestre é diferente",
+          "subheadings": [
+            "100% para RPG",
+            "Comece em 30 segundos",
+            "Metodologia Nuckturp"
+          ],
+          "lede": "Por que o QG do Mestre é diferente\n100% para RPG"
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 8,
+        "tag": "section",
+        "role": "content",
+        "subrole": null,
+        "confidence": 0.3,
+        "heading": "Direto do QG",
+        "bounds": {
+          "x": 0,
+          "y": -319.375,
+          "w": 1280,
+          "h": 977.75
+        },
+        "buttonCount": 1,
+        "cardCount": 26,
+        "slots": {
+          "heading": "Direto do QG",
+          "subheadings": [
+            "O Roteiro que Derreteu",
+            "USANDO SORTE EM CHAMADO DE CTHULHU",
+            "O Amadurecimento do Mestre: Neurodivergência, Carga Mental e o Desafio da Campanha Contínua",
+            "Quando a Previsibilidade Arruína o Horror"
+          ],
+          "ctaCount": 1
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 9,
+        "tag": "section",
+        "role": "hero",
+        "subrole": null,
+        "confidence": 0.4,
+        "heading": "Sua próxima sessão merece preparação épica",
+        "bounds": {
+          "x": 0,
+          "y": 658.375,
+          "w": 1280,
+          "h": 445
+        },
+        "buttonCount": 1,
+        "cardCount": 2,
+        "slots": {
+          "heading": "Sua próxima sessão merece preparação épica",
+          "ctaCount": 1
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 10,
+        "tag": "footer",
+        "role": "footer",
+        "subrole": null,
+        "confidence": 0.95,
+        "heading": null,
+        "bounds": {
+          "x": 0,
+          "y": 1103.375,
+          "w": 1280,
+          "h": 426
+        },
+        "buttonCount": 1,
+        "cardCount": 3,
+        "slots": {
+          "ctaCount": 1,
+          "lede": "O QG do Mestre de RPG. Organize suas campanhas, sessões, jogadores e ideias em um só lugar. A ferramenta definitiva para o mestre de RPG."
+        },
+        "needsSmart": false
+      }
+    ],
+    "counts": {
+      "content": 4,
+      "nav": 2,
+      "hero": 2,
+      "testimonial": 2,
+      "footer": 1
+    },
+    "readingOrder": [
+      "content",
+      "hero",
+      "content",
+      "testimonial",
+      "testimonial",
+      "content",
+      "content",
+      "nav",
+      "nav",
+      "hero",
+      "footer"
+    ]
+  }
+}
