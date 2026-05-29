@@ -8,8 +8,10 @@
 - [x] Frente 1 — Inventários do app antigo → `docs/inventario/` (schema, edge-functions, rotas-slugs, modulos).
 - [x] Frente 3 — Suíte de docs portada para `docs/` (VPS "A" + npm) + planos dos spikes 00.1 e 00.4.
 - [x] Frente 2 (scripts) — Migração portada/corrigida em `scripts/` (export/import com schema `auth`).
-- [ ] Frente 2 (ferramentas) — Instalar pg_dump/psql/jq/supabase CLI; método a definir (scoop bloqueado por política; winget disponível).
+- [x] Frente 2 (ferramentas) — pg_dump/psql 18.4, jq, supabase CLI instalados via scoop.
 - [ ] (bloqueado) Fase 00.1 auth spike → aguarda acesso ao Lovable.
+
+> **Preparação sem Supabase ESGOTADA.** Tudo o que restava depende do acesso ao Lovable/Supabase (spikes 00.1/00.4) ou do GO da Fase 00 (scaffold/Fase 1). Frente opcional ainda possível sem acesso: mapear os substitutos do lock-in (Gemini direto + Resend) nas 7 edge functions.
 
 ## Decisões travadas (2026-05-28)
 - Hospedagem = **VPS "A"** (D3/ADR-0003). START-HERE.md corrigido; PRD/ops/architecture do projeto antigo seguem desatualizados (read-only, corrigir ao portar docs).
