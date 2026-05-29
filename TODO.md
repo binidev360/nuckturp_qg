@@ -4,6 +4,22 @@
 > Fonte de verdade do plano: `D:\ProjetoAntigravity\Nuckturp_2.1\nuckturp\docs\MIGRACAO-NEXTJS.md` (APPROVED).
 > Slow and steady — 8 fases × 5 sub-fases + Fase 00 (spikes GO/NO-GO). Nada avança sem o anterior validado.
 
+## 🔀 PIVOT — QG 100% pago (2026-05-29) — ver `docs/PIVOT-MODELO-PAGO.md`
+
+Modelo freemium morre · R$29 · home = página de vendas · Academia removida do app · usuários atuais = Mestre VIP · WorldCraft grátis (badge header) · MesaQuest cupom · IA limitada + add-on. **SUPERSEDE PRD §3/§4.8.**
+
+### Tarefas geradas pelo pivot (a executar nas fases certas)
+
+- [ ] Revisar o PRD (modelo, Academia, monetização, métricas) refletindo o pivot.
+- [ ] Página de vendas como home (Fase 3) — usar `/copy-basic`.
+- [ ] Paywall no nível do app (billing gateia tudo) + tiers (pago/VIP/WorldCraft/MesaQuest).
+- [ ] Entitlement cross-product WorldCraft (cruzar Stripe/DB) + badge header 🔓 "assinante worldcraft".
+- [ ] Cupom MesaQuest (Stripe coupons).
+- [ ] Metering de IA (quota base) + add-on pago de requisições (conecta achado S8).
+- [ ] Grandfather: marcar todos os migrados como VIP no cutover + regra de inatividade p/ revogar.
+- [ ] Academia: remover UI/rotas `/journey/*` do escopo de port; decidir destino das URLs e das tabelas `academy_*`.
+- [ ] Resolver confirmações C1–C7 (rodada futura) — C2 (SEO público aberto) é crítica.
+
 ## Em andamento (preparação — Supabase pendente)
 
 - [x] Frente 1 — Inventários do app antigo → `docs/inventario/` (schema, edge-functions, rotas-slugs, modulos).
