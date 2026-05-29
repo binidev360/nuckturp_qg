@@ -1,0 +1,1 @@
+ALTER TABLE public.sessions ALTER COLUMN status SET DEFAULT 'preparing';

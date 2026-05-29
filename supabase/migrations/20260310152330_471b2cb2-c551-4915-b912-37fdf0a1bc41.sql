@@ -1,0 +1,1 @@
+ALTER TABLE public.session_feedback_configs ADD COLUMN self_evaluation TEXT DEFAULT NULL;

@@ -1,0 +1,1 @@
+ALTER TABLE public.link_analysis_results ADD COLUMN IF NOT EXISTS context_snippet text DEFAULT NULL;

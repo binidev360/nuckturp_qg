@@ -1,0 +1,1 @@
+ALTER TABLE public.adventures ADD COLUMN IF NOT EXISTS is_one_shot boolean NOT NULL DEFAULT false;

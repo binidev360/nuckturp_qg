@@ -1,0 +1,1 @@
+ALTER TABLE public.featured_links ADD COLUMN IF NOT EXISTS location text NOT NULL DEFAULT 'spotlight';

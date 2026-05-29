@@ -1,0 +1,1 @@
+ALTER TABLE public.posts ADD COLUMN admin_reviewed_at timestamp with time zone DEFAULT NULL;

@@ -7,3 +7,5 @@ package-lock.json
 .secrets
 docs/inventario/designlang
 public
+supabase
+lib/supabase/database.types.ts

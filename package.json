@@ -40,7 +40,7 @@
     "vitest": "^4.1.7"
   },
   "lint-staged": {
-    "*.{ts,tsx,js,jsx,mjs,cjs}": [
+    "{app,components,lib,e2e}/**/*.{ts,tsx,js,jsx,mjs,cjs}": [
       "eslint --fix",
       "prettier --write"
     ],

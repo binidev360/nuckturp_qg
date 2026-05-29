@@ -1,0 +1,1 @@
+ALTER TABLE public.blog_authors ADD COLUMN IF NOT EXISTS blog_title_font text DEFAULT null;

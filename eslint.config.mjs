@@ -22,6 +22,9 @@ const eslintConfig = defineConfig([
     "docs/**",
     "scripts/**",
     "coverage/**",
+    // Backend Deno/SQL + types gerados — ferramentas próprias, fora do lint do app.
+    "supabase/**",
+    "**/database.types.ts",
   ]),
 ]);
 
