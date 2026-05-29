@@ -28,6 +28,20 @@
 
 > Restante bloqueado: spikes 00.1/00.4 e Fase 1 dependem do acesso ao Lovable/Supabase.
 
+## Auditoria preliminar (grande pausa — antes de portar)
+
+- [x] **Onda A · Segurança & RLS** → `docs/auditoria/` (rls-policies, edge-seguranca, auth-admin-secrets + consolidado `seguranca-rls.md` + `admin-model.md` com design decoy+real). 12 achados (S1–S12) priorizados.
+- [ ] Onda B · Interconexão (item 5) — mapa feature→componentes→tabelas→edge→externos + fluxos críticos.
+- [ ] Onda C · Index/CODEMAP (item 6) — expandir INDEX + gerar CODEMAP + mapa feature→dados.
+- [ ] Onda D · Design (item 4) — 6 skills (taste/impeccable/ui-ux-pro-max/design-motion-principles/motion-audit/humanizer) → consolidado. Escopo: site no ar + código antigo → spec da nova versão.
+
+### Decisões abertas da Onda A (aguardam Marco)
+
+- D-A: modelo de acesso do catálogo Academy (RLS) — achado S9.
+- D-B: versionar `consent_links` + RLS antes do port (PII/LGPD) — S1.
+- D-C: `instagram-thumbnail`/`fetch-og-image` públicas (com allowlist) ou autenticadas — S2.
+- Validar design decoy+real (`admin-model.md`): formato da rota real + MFA já no MVP?
+
 ## Decisões travadas (2026-05-28)
 
 - Hospedagem = **VPS "A"** (D3/ADR-0003). START-HERE.md corrigido; PRD/ops/architecture do projeto antigo seguem desatualizados (read-only, corrigir ao portar docs).
