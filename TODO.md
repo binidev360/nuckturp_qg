@@ -4,6 +4,8 @@
 > Fonte de verdade do plano: `D:\ProjetoAntigravity\Nuckturp_2.1\nuckturp\docs\MIGRACAO-NEXTJS.md` (APPROVED).
 > Slow and steady — 8 fases × 5 sub-fases + Fase 00 (spikes GO/NO-GO). Nada avança sem o anterior validado.
 
+> ⏸️ **STANDBY (2026-05-30):** upgrades em PRODUÇÃO (Lovable) em curso ("vem bastante coisa nova"). Checkpoint salvo. O dump em `export/` é snapshot point-in-time — **re-puxar fresco no cutover**. Retomar quando o Marco der o sinal. Detalhe em `.claude/INDEX.md` (Camada 2 + Próximas ações).
+
 ## 🔀 PIVOT — QG 100% pago (2026-05-29) — ver `docs/PIVOT-MODELO-PAGO.md`
 
 Modelo freemium morre · R$29 · home = página de vendas · Academia removida do app · usuários atuais = Mestre VIP · WorldCraft grátis (badge header) · MesaQuest cupom · IA limitada + add-on. **SUPERSEDE PRD §3/§4.8.**
@@ -13,7 +15,7 @@ Modelo freemium morre · R$29 · home = página de vendas · Academia removida d
 - [ ] Revisar o PRD (modelo, Academia, monetização, métricas) refletindo o pivot.
 - [x] **Página de vendas (home)** construída → `app/page.tsx`. CTAs apontam p/ `/auth`. Botão canônico `components/ui/button.tsx` (Link) + `cn`.
 - [x] **Home ajustada** (2026-05-30): imagens reais (`public/img/`, 21 imgs) + motion (lib `motion` + scroll-reveal `components/motion/reveal.tsx`, reduced-motion safe) + galeria de screenshots + D20 no CTA final. Build verde, validado no browser (hero com a imagem de mesa de RPG).
-- [ ] **Landings: worldbuilding, livro, checklist** — briefs em `docs/landing-briefs.md`. ⚠️ Decisões antes de escrever a copy: (D1) checklist é tripwire PAGO R$5,37, não lead magnet — virar grátis→trial QG ou manter pago?; (D2) ratings/depoimentos são placeholder — NÃO publicar prova falsa (usar real/omitir); (D3) variante A/B do worldbuilding — consolidar numa só?; (D4) CTA cruzado p/ trial do QG nas 3.
+- [~] **Landings: livro, worldbuilding, checklist** — briefs em `docs/landing-briefs.md`. ✅ **Decisões D1–D4 (2026-05-30):** checklist = lead magnet GRÁTIS (e-mail→trial QG, não mais tripwire pago); omitir prova não-verificada (só real, sem `reviewCount` falso); worldbuilding consolidado numa landing (descarta variante A/B); cross-sell QG nas 3. ✅ Componentes prontos: `components/landing/{section,stars,qg-cross-sell}.tsx`. ✅ Copy real do Livro extraída do app antigo (2 reviews Amazon + história do autor). ⏳ Construir as 3 páginas (`/o-livro-completo-do-mestre-de-rpg`, `/curso-de-worldbuilding`, `/checklist-do-mestre-metodico`). Checklist precisa de captura de e-mail (Server Action + destino a definir: tabela leads no Supabase ou Resend).
 - [ ] Paywall no nível do app (billing gateia tudo) + tiers (pago/VIP/WorldCraft/MesaQuest).
 - [ ] Entitlement cross-product WorldCraft (cruzar Stripe/DB) + badge header 🔓 "assinante worldcraft".
 - [ ] Cupom MesaQuest (Stripe coupons).
