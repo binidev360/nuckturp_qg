@@ -20,7 +20,8 @@
     "next": "16.2.6",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "server-only": "^0.0.1"
+    "server-only": "^0.0.1",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@playwright/test": "^1.60.0",
@@ -43,7 +44,7 @@
     "vitest": "^4.1.7"
   },
   "lint-staged": {
-    "{app,components,lib,e2e}/**/*.{ts,tsx,js,jsx,mjs,cjs}": [
+    "{app,components,features,lib,e2e}/**/*.{ts,tsx,js,jsx,mjs,cjs}": [
       "eslint --fix",
       "prettier --write"
     ],

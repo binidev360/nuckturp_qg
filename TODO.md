@@ -41,7 +41,8 @@ Modelo freemium morre · R$29 · home = página de vendas · Academia removida d
 - [x] 0.4 Qualidade: ESLint `no-alert`, Prettier, husky+lint-staged (pre-commit validado), Vitest (3 testes), Playwright base (channel chrome). lint/typecheck/test verdes.
 - [x] Docs: erratas em design-system.md/branding.md (apontam ui-componentes.md) + assets de marca copiados p/ `public/`.
 - [ ] 0.3 Camada Supabase (`@supabase/ssr`) — depende de um projeto Supabase (bloqueado).
-- [ ] ⏸️ **PARAR AQUI** — Fase 2 (auth) é refém do spike 00.1; aguarda acesso ao Lovable.
+- [x] **0.3 + Fase 2.1 (auth núcleo)** feito e validado E2E: `/auth` (login/cadastro), `(app)` guard, `/dashboard`, callback, logout; signup cria profile+tenant. Reframe: o SISTEMA de auth não é refém do spike 00.1 (só a migração dos usuários Lovable, que é cutover).
+  - [ ] Fase 2 resta: admin decoy/MFA · Google OAuth (client Google) · `/redefinir-senha` · onboarding · shell autenticado (sidebar/mobile-nav).
 
 > Restante bloqueado: spikes 00.1/00.4 e Fase 1 dependem do acesso ao Lovable/Supabase.
 

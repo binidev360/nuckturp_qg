@@ -1,4 +1,5 @@
 import type { ComponentProps } from "react";
+import Link from "next/link";
 import { CtaButton } from "@/components/ui/button";
 
 const TRIAL_MICRO = "21 dias grátis, sem cartão. R$ 29/mês depois.";
@@ -90,12 +91,12 @@ export default function Home() {
       <header className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 py-5 sm:px-12 lg:px-20">
         <span className="font-display text-lg font-bold tracking-tight">QG do Mestre</span>
         <nav className="flex items-center gap-2 sm:gap-4">
-          <a
-            href="/login"
+          <Link
+            href="/auth"
             className="text-muted-foreground hover:text-foreground hidden px-3 py-2 text-sm transition-colors sm:inline"
           >
             Entrar
-          </a>
+          </Link>
           <CtaButton href="#preco" size="md">
             Testar grátis
           </CtaButton>
@@ -120,7 +121,7 @@ export default function Home() {
               parou, sem caçar aquele NPC que anotou no celular e já não acha mais.
             </p>
             <div className="mt-8 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
-              <CtaButton href="/signup">Começar meu trial de 21 dias</CtaButton>
+              <CtaButton href="/auth">Começar meu trial de 21 dias</CtaButton>
               <span className="text-muted-foreground text-sm">{TRIAL_MICRO}</span>
             </div>
             <p className="text-muted-foreground/80 mt-10 text-sm">
@@ -224,7 +225,7 @@ export default function Home() {
           </ul>
 
           <div className="mt-9 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
-            <CtaButton href="/signup">Começar meu trial de 21 dias</CtaButton>
+            <CtaButton href="/auth">Começar meu trial de 21 dias</CtaButton>
             <span className="text-muted-foreground text-sm">{TRIAL_MICRO}</span>
           </div>
         </Section>
@@ -258,7 +259,7 @@ export default function Home() {
               é só cancelar.
             </p>
             <div className="mt-8 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
-              <CtaButton href="/signup">Começar meu trial de 21 dias</CtaButton>
+              <CtaButton href="/auth">Começar meu trial de 21 dias</CtaButton>
               <span className="text-muted-foreground text-sm">{TRIAL_MICRO}</span>
             </div>
           </div>
