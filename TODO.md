@@ -93,7 +93,11 @@ Modelo freemium morre · R$29 · home = página de vendas · Academia removida d
 ## Fases (macro — detalhe no plano-mestre)
 
 - [ ] Fase 0 — Fundação & arquitetura (scaffold, design system, camada Supabase, qualidade, app shell). Local.
-- [~] Fase 1 — Schema-first: ✅ schema (209 migrations, 85 tabelas, 0 sem RLS) + types + `@supabase/ssr` (0.3) + **grants das roles corrigidos** (migration de grants) + **478 posts públicos espelhados** do Lovable (dev, sem PII, via `scripts/mirror-posts.mjs`). ⏳ pendente: 1.4 deploy das edge functions (secrets + lock-in); 1.5 seed de dados privados sintéticos. Ver `docs/fase1-migracao-notas.md`.
+- [~] Fase 1 — Schema-first: ✅ schema (209 migrations, 85 tabelas, 0 sem RLS) + types + `@supabase/ssr` (0.3) + **grants das roles corrigidos** (migration de grants) + **478 posts públicos espelhados** do Lovable (dev, sem PII, via `scripts/mirror-posts.mjs`). ⏳ pendente: 1.4 deploy das edge functions (secrets + lock-in). Ver `docs/fase1-migracao-notas.md`.
+- [x] **Dev Bridge validado (2026-05-30)** — ponte read-only do Lovable (`scripts/dev-bridge-pull.mjs`). Pull real p/ `export/` (gitignored): **30/32 tabelas** (campaigns 305, sessions 277, players 149, notes 174, **premium_overrides 14 = VIP**, posts 512), **353 usuários (todos confirmados)**, storage (profile-assets 463, blog-assets 1.498). Substitui o seed sintético da 1.5 por dado real. Ver `docs/migracao-dev-bridge.md`.
+  - [ ] **Reportar ao dev externo 4 bugs da ponte:** `/schema` 500 · `/table/blog_categories` 500 · `/table/tags` 500 · storage list ignora `offset` (pasta `content` >1000 não enumera inteira).
+  - [ ] **Download de storage** (`storage --download`) — após o dev corrigir a paginação do `content` (senão baixa só os 1os 1000 inline images; covers/avatares já 100% listados).
+  - [ ] Re-hidratação (Fase B/cutover): inserir `auth.users`+`identities` com UUID → tabelas em ordem de FK (pular logs de notificação ~279k) → religar `posts.blog_author_id`.
 - [ ] Fase 2 — Núcleo: Auth + shell + design. Inclui **2.2 dry-run de senha/identities** (risco nº 1).
 - [ ] Fase 3 — Páginas públicas SSR/SSG (SEO): blog, perfil, dicionário, landing, metadata/sitemap/RSS/OG + diff de HTML.
 - [ ] Fase 4 — App autenticado por módulo (campanhas, diário/TipTap, whiteboard, jogadores, ferramentas, admin). Gate de corte D17 pós-4.2.
