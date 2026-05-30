@@ -1,6 +1,8 @@
-import type { ComponentProps } from "react";
+import Image from "next/image";
 import Link from "next/link";
+import type { ComponentProps } from "react";
 import { CtaButton } from "@/components/ui/button";
+import { Reveal } from "@/components/motion/reveal";
 
 const TRIAL_MICRO = "21 dias grátis, sem cartão. R$ 29/mês depois.";
 
@@ -30,6 +32,12 @@ const FEATURES = [
     texto:
       "Role dados na hora, gere uma aventura d20 quando a inspiração some, e deixe a IA preparar a próxima sessão a partir da sua campanha.",
   },
+] as const;
+
+const SHOWCASE = [
+  { src: "/img/screenshot-sessions.jpg", label: "Sessões com checklist" },
+  { src: "/img/screenshot-ideaboard.jpg", label: "Quadro de Ideias" },
+  { src: "/img/screenshot-dashboard.jpg", label: "Seu QG num relance" },
 ] as const;
 
 const PASSOS = [
@@ -87,7 +95,6 @@ function Section({ className, ...props }: ComponentProps<"section">) {
 export default function Home() {
   return (
     <div className="bg-background text-foreground min-h-dvh">
-      {/* Header */}
       <header className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 py-5 sm:px-12 lg:px-20">
         <span className="font-display text-lg font-bold tracking-tight">QG do Mestre</span>
         <nav className="flex items-center gap-2 sm:gap-4">
@@ -105,134 +112,201 @@ export default function Home() {
 
       <main>
         {/* Hero */}
-        <Section className="relative overflow-hidden pt-10 pb-20 sm:pt-16">
-          {/* 1 glow funcional por viewport (regra da Onda D) */}
+        <Section className="relative overflow-hidden pt-8 pb-16 sm:pt-12">
           <div
             aria-hidden
-            className="bg-primary/10 pointer-events-none absolute -top-24 -left-24 -z-10 h-[42vh] w-[42vh] rounded-full blur-[120px]"
+            className="bg-primary/10 pointer-events-none absolute -top-24 -left-24 -z-10 h-[44vh] w-[44vh] rounded-full blur-[120px]"
           />
-          <div className="max-w-3xl">
-            <h1 className="font-display text-5xl leading-[0.95] font-bold tracking-tight text-balance sm:text-7xl">
-              Pare de mestrar com{" "}
-              <span className="text-primary text-glow-lime">cinco abas abertas</span>.
-            </h1>
-            <p className="text-muted-foreground mt-6 max-w-xl text-lg sm:text-xl">
-              Campanha, sessões, notas e o seu mundo no mesmo lugar. Você chega na mesa sabendo onde
-              parou, sem caçar aquele NPC que anotou no celular e já não acha mais.
-            </p>
-            <div className="mt-8 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
-              <CtaButton href="/auth">Começar meu trial de 21 dias</CtaButton>
-              <span className="text-muted-foreground text-sm">{TRIAL_MICRO}</span>
+          <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+            <div className="max-w-xl">
+              <span className="border-primary/30 bg-primary/10 text-primary inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-medium tracking-wide">
+                <span className="bg-primary size-1.5 rounded-full" />
+                Para mestres de RPG
+              </span>
+              <h1 className="animate-fade-up font-display mt-6 text-5xl leading-[0.95] font-bold tracking-tight text-balance sm:text-7xl">
+                Pare de mestrar com{" "}
+                <span className="text-primary text-glow-lime">cinco abas abertas</span>.
+              </h1>
+              <p className="animate-fade-up text-muted-foreground mt-6 text-lg sm:text-xl">
+                Campanha, sessões, notas e o seu mundo no mesmo lugar. Você chega na mesa sabendo
+                onde parou, sem caçar aquele NPC que anotou no celular e já não acha mais.
+              </p>
+              <div className="mt-8 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
+                <CtaButton href="/auth">Começar meu trial de 21 dias</CtaButton>
+                <span className="text-muted-foreground text-sm">{TRIAL_MICRO}</span>
+              </div>
+              <p className="text-muted-foreground/80 mt-10 text-sm">
+                <strong className="font-mono">134+</strong> mestres já preparam suas mesas no QG.
+              </p>
             </div>
-            <p className="text-muted-foreground/80 mt-10 text-sm">
-              <strong className="font-mono">134+</strong> mestres já preparam suas mesas no QG.
-            </p>
+
+            <div className="animate-fade-in relative">
+              <div
+                aria-hidden
+                className="bg-secondary/10 absolute -right-8 -bottom-8 -z-10 h-40 w-40 rounded-full blur-[90px]"
+              />
+              <div className="border-border relative aspect-[4/3] overflow-hidden rounded-2xl border shadow-2xl shadow-black/40">
+                <Image
+                  src="/img/landing-hero.jpg"
+                  alt="O QG do Mestre em uso"
+                  fill
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 45vw"
+                  className="object-cover"
+                />
+              </div>
+            </div>
           </div>
         </Section>
 
         {/* Problema */}
         <Section className="border-border/60 border-t">
-          <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
-            A prep não devia ser uma caça ao tesouro.
-          </h2>
-          <p className="text-muted-foreground mt-5 max-w-2xl text-lg">
-            Você conhece a cena: a campanha mora num Google Doc, as fichas estão numa planilha, e
-            aquele vilão genial você anotou no app de notas. Na hora da sessão, metade da prep vira
-            caça ao tesouro. O detalhe que ia amarrar o arco ficou para trás duas sessões atrás, e o
-            jogador lembrou antes de você.
-          </p>
+          <Reveal>
+            <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+              A prep não devia ser uma caça ao tesouro.
+            </h2>
+            <p className="text-muted-foreground mt-5 max-w-2xl text-lg">
+              Você conhece a cena: a campanha mora num Google Doc, as fichas estão numa planilha, e
+              aquele vilão genial você anotou no app de notas. Na hora da sessão, metade da prep
+              vira caça ao tesouro. O detalhe que ia amarrar o arco ficou para trás duas sessões
+              atrás, e o jogador lembrou antes de você.
+            </p>
+          </Reveal>
         </Section>
 
         {/* A virada */}
         <Section className="border-border/60 border-t">
-          <h2 className="font-display max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
-            Um <span className="text-primary">QG</span> só, com a sua mesa inteira dentro.
-          </h2>
-          <p className="text-muted-foreground mt-5 max-w-2xl text-lg">
-            O QG do Mestre junta a sua preparação inteira num lugar só. Campanha, aventuras,
-            sessões, jogadores, o seu mundo e as suas ideias, tudo conectado e do seu jeito. O que
-            você escreveu na terça, você acha na sexta, no celular, em dez segundos.
-          </p>
+          <Reveal>
+            <h2 className="font-display max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
+              Um <span className="text-primary">QG</span> só, com a sua mesa inteira dentro.
+            </h2>
+            <p className="text-muted-foreground mt-5 max-w-2xl text-lg">
+              O QG do Mestre junta a sua preparação inteira num lugar só. Campanha, aventuras,
+              sessões, jogadores, o seu mundo e as suas ideias, tudo conectado e do seu jeito. O que
+              você escreveu na terça, você acha na sexta, no celular, em dez segundos.
+            </p>
+          </Reveal>
         </Section>
 
-        {/* Showcase de features */}
+        {/* Galeria */}
         <Section className="border-border/60 border-t">
-          <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
-            O que tem dentro
-          </h2>
+          <Reveal>
+            <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+              Veja por dentro
+            </h2>
+          </Reveal>
+          <div className="mt-10 grid gap-4 sm:grid-cols-3">
+            {SHOWCASE.map((s, i) => (
+              <Reveal key={s.src} delay={i * 0.08}>
+                <figure>
+                  <div className="border-border relative aspect-[16/11] overflow-hidden rounded-xl border">
+                    <Image
+                      src={s.src}
+                      alt={s.label}
+                      fill
+                      sizes="(max-width: 640px) 100vw, 30vw"
+                      className="object-cover"
+                    />
+                  </div>
+                  <figcaption className="text-muted-foreground mt-2 text-sm">{s.label}</figcaption>
+                </figure>
+              </Reveal>
+            ))}
+          </div>
+        </Section>
+
+        {/* Features */}
+        <Section className="border-border/60 border-t">
+          <Reveal>
+            <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+              O que tem dentro
+            </h2>
+          </Reveal>
           <div className="mt-10 grid gap-x-10 gap-y-8 sm:grid-cols-2">
-            {FEATURES.map((f) => (
-              <div key={f.titulo} className="border-primary/40 border-l-2 pl-5">
-                <h3 className="font-display text-xl font-semibold">{f.titulo}</h3>
-                <p className="text-muted-foreground mt-2">{f.texto}</p>
-              </div>
+            {FEATURES.map((f, i) => (
+              <Reveal key={f.titulo} delay={i * 0.06}>
+                <div className="border-primary/40 border-l-2 pl-5">
+                  <h3 className="font-display text-xl font-semibold">{f.titulo}</h3>
+                  <p className="text-muted-foreground mt-2">{f.texto}</p>
+                </div>
+              </Reveal>
             ))}
           </div>
         </Section>
 
         {/* Como funciona */}
         <Section className="border-border/60 border-t">
-          <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
-            Como funciona
-          </h2>
+          <Reveal>
+            <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+              Como funciona
+            </h2>
+          </Reveal>
           <ol className="mt-10 grid gap-8 sm:grid-cols-3">
             {PASSOS.map((passo, i) => (
-              <li key={passo}>
-                <span className="text-primary font-mono text-3xl font-bold">{i + 1}</span>
-                <p className="mt-3 text-lg">{passo}</p>
-              </li>
+              <Reveal key={passo} delay={i * 0.08}>
+                <li>
+                  <span className="text-primary font-mono text-3xl font-bold">{i + 1}</span>
+                  <p className="mt-3 text-lg">{passo}</p>
+                </li>
+              </Reveal>
             ))}
           </ol>
         </Section>
 
         {/* Depoimento (placeholder) */}
         <Section className="border-border/60 border-t">
-          {/* PLACEHOLDER: substituir por depoimento real coletado */}
-          <figure className="max-w-3xl">
-            <blockquote className="font-display text-2xl leading-snug font-medium tracking-tight sm:text-3xl">
-              &ldquo;Parei de perder NPC entre uma sessão e outra. Agora abro o QG no celular e está
-              tudo lá.&rdquo;
-            </blockquote>
-            <figcaption className="text-muted-foreground mt-4 text-sm">
-              Mestre [nome], [sistema] · depoimento a coletar
-            </figcaption>
-          </figure>
+          <Reveal>
+            {/* PLACEHOLDER: substituir por depoimento real coletado */}
+            <figure className="max-w-3xl">
+              <blockquote className="font-display text-2xl leading-snug font-medium tracking-tight sm:text-3xl">
+                &ldquo;Parei de perder NPC entre uma sessão e outra. Agora abro o QG no celular e
+                está tudo lá.&rdquo;
+              </blockquote>
+              <figcaption className="text-muted-foreground mt-4 text-sm">
+                Mestre [nome], [sistema] · depoimento a coletar
+              </figcaption>
+            </figure>
+          </Reveal>
         </Section>
 
         {/* Preço */}
         <Section id="preco" className="border-border/60 border-t">
-          <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
-            R$ <span className="font-mono">29</span>/mês. 21 dias grátis, sem cartão.
-          </h2>
-          <p className="text-muted-foreground mt-4 max-w-2xl text-lg">
-            Testa com a sua campanha de verdade. A IA vem inclusa, com limite mensal. Usou muito?
-            Amplia com um pacote extra.
-          </p>
-
-          <ul className="mt-8 max-w-2xl space-y-3 text-base">
-            <li className="flex items-start gap-3">
-              <span className="border-primary/40 bg-primary/10 text-primary inline-flex shrink-0 items-center gap-1.5 rounded-md border px-2 py-1 text-xs font-medium">
-                <UnlockIcon className="size-3.5" /> assinante worldcraft
-              </span>
-              <span className="text-muted-foreground">O QG entra junto, sem custo.</span>
-            </li>
-            <li className="text-muted-foreground">
-              <strong>Veio do MesaQuest?</strong> Você tem cupom de desconto.
-            </li>
-            <li className="text-muted-foreground">
-              <strong>Já usava o QG?</strong> Você é Mestre VIP e segue com acesso, sem pagar.
-            </li>
-          </ul>
-
-          <div className="mt-9 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
-            <CtaButton href="/auth">Começar meu trial de 21 dias</CtaButton>
-            <span className="text-muted-foreground text-sm">{TRIAL_MICRO}</span>
-          </div>
+          <Reveal>
+            <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+              R$ <span className="font-mono">29</span>/mês. 21 dias grátis, sem cartão.
+            </h2>
+            <p className="text-muted-foreground mt-4 max-w-2xl text-lg">
+              Testa com a sua campanha de verdade. A IA vem inclusa, com limite mensal. Usou muito?
+              Amplia com um pacote extra.
+            </p>
+            <ul className="mt-8 max-w-2xl space-y-3 text-base">
+              <li className="flex items-start gap-3">
+                <span className="border-primary/40 bg-primary/10 text-primary inline-flex shrink-0 items-center gap-1.5 rounded-md border px-2 py-1 text-xs font-medium">
+                  <UnlockIcon className="size-3.5" /> assinante worldcraft
+                </span>
+                <span className="text-muted-foreground">O QG entra junto, sem custo.</span>
+              </li>
+              <li className="text-muted-foreground">
+                <strong>Veio do MesaQuest?</strong> Você tem cupom de desconto.
+              </li>
+              <li className="text-muted-foreground">
+                <strong>Já usava o QG?</strong> Você é Mestre VIP e segue com acesso, sem pagar.
+              </li>
+            </ul>
+            <div className="mt-9 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
+              <CtaButton href="/auth">Começar meu trial de 21 dias</CtaButton>
+              <span className="text-muted-foreground text-sm">{TRIAL_MICRO}</span>
+            </div>
+          </Reveal>
         </Section>
 
         {/* FAQ */}
         <Section className="border-border/60 border-t">
-          <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">Perguntas</h2>
+          <Reveal>
+            <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+              Perguntas
+            </h2>
+          </Reveal>
           <div className="divide-border/60 mt-8 max-w-2xl divide-y">
             {FAQ.map((item) => (
               <details key={item.q} className="group py-4">
@@ -250,19 +324,31 @@ export default function Home() {
 
         {/* CTA final */}
         <Section className="border-border/60 border-t">
-          <div className="max-w-2xl">
-            <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
-              Sua próxima sessão merece uma prep que aguenta a mesa.
-            </h2>
-            <p className="text-muted-foreground mt-4 text-lg">
-              Leve a campanha toda pro QG e veja a diferença na primeira mesa. Se não for pra você,
-              é só cancelar.
-            </p>
-            <div className="mt-8 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
-              <CtaButton href="/auth">Começar meu trial de 21 dias</CtaButton>
-              <span className="text-muted-foreground text-sm">{TRIAL_MICRO}</span>
+          <Reveal>
+            <div className="flex flex-col items-center gap-8 sm:flex-row sm:justify-between">
+              <div className="max-w-2xl">
+                <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+                  Sua próxima sessão merece uma prep que aguenta a mesa.
+                </h2>
+                <p className="text-muted-foreground mt-4 text-lg">
+                  Leve a campanha toda pro QG e veja a diferença na primeira mesa. Se não for pra
+                  você, é só cancelar.
+                </p>
+                <div className="mt-8">
+                  <CtaButton href="/auth">Começar meu trial de 21 dias</CtaButton>
+                </div>
+              </div>
+              <div aria-hidden className="relative hidden size-40 shrink-0 sm:block">
+                <Image
+                  src="/img/book-landing-d20.png"
+                  alt=""
+                  fill
+                  sizes="160px"
+                  className="object-contain drop-shadow-[0_0_24px_hsl(82_100%_65%/0.35)]"
+                />
+              </div>
             </div>
-          </div>
+          </Reveal>
         </Section>
       </main>
 

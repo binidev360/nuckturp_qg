@@ -47,7 +47,8 @@ Thumbs.db
 
 # artefatos transientes de captura (Playwright/preview)
 .playwright-mcp/
-/*-preview.jpeg
+/*preview*.jpeg
+/*viewport*.jpeg
 
 # supabase CLI (cache local; .temp pode conter connection string com senha)
 supabase/.temp/

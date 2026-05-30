@@ -11,7 +11,9 @@ Modelo freemium morre · R$29 · home = página de vendas · Academia removida d
 ### Tarefas geradas pelo pivot (a executar nas fases certas)
 
 - [ ] Revisar o PRD (modelo, Academia, monetização, métricas) refletindo o pivot.
-- [x] **Página de vendas (home)** construída → `app/page.tsx` (copy via `/copy-basic` em `docs/copy-pagina-vendas.md`; design Onda D; trial 21d sem cartão; 134+; depoimento placeholder; badge WorldCraft). Botão canônico `components/ui/button.tsx` + `cn` em lib/utils. Build verde + screenshot conferido. CTAs apontam p/ `/signup` (rota futura, Fase 2).
+- [x] **Página de vendas (home)** construída → `app/page.tsx`. CTAs apontam p/ `/auth`. Botão canônico `components/ui/button.tsx` (Link) + `cn`.
+- [x] **Home ajustada** (2026-05-30): imagens reais (`public/img/`, 21 imgs) + motion (lib `motion` + scroll-reveal `components/motion/reveal.tsx`, reduced-motion safe) + galeria de screenshots + D20 no CTA final. Build verde, validado no browser (hero com a imagem de mesa de RPG).
+- [ ] **Landings: worldbuilding, livro, checklist** — briefs em `docs/landing-briefs.md`. ⚠️ Decisões antes de escrever a copy: (D1) checklist é tripwire PAGO R$5,37, não lead magnet — virar grátis→trial QG ou manter pago?; (D2) ratings/depoimentos são placeholder — NÃO publicar prova falsa (usar real/omitir); (D3) variante A/B do worldbuilding — consolidar numa só?; (D4) CTA cruzado p/ trial do QG nas 3.
 - [ ] Paywall no nível do app (billing gateia tudo) + tiers (pago/VIP/WorldCraft/MesaQuest).
 - [ ] Entitlement cross-product WorldCraft (cruzar Stripe/DB) + badge header 🔓 "assinante worldcraft".
 - [ ] Cupom MesaQuest (Stripe coupons).
